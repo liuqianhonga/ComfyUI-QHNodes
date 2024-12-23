@@ -1,6 +1,6 @@
 # ComfyUI-QHNodes
 
-为 ComfyUI 开发的自定义节点集合，提供社交媒体和相机尺寸预设。
+为 ComfyUI 开发的自定义节点集合，提供预设尺寸预设Latent、从文件夹加载LoRA。
 
 ## 安装方法
 
@@ -83,7 +83,7 @@ git clone https://github.com/liuqianhonga/ComfyUI-QHNodes.git
 - **Youtube**
   - Cover (2560×1440) - 适合视频封面
 
-## 自定义预设
+#### 自定义预设
 
 你可以通过编辑以下文件来添加自己的预设尺寸：
 - `nodes/preset_sizes.json`: 社交媒体预设
@@ -95,3 +95,43 @@ git clone https://github.com/liuqianhonga/ComfyUI-QHNodes.git
     "预设名称 (宽×高)": [宽度, 高度]
 }
 ```
+
+### 🐟 Load LoRA (Folder)
+
+从指定文件夹加载 LoRA 模型。支持以下功能：
+
+- **文件夹路径**：支持多个文件夹路径，使用英文逗号分隔
+  - 示例：`myLoras, character/style1`
+  - 相对路径基于 ComfyUI 的 `models/loras` 目录
+  - 如果路径不存在会在控制台输出提示信息
+- **文件过滤**：支持文件名过滤，使用英文逗号分隔多个关键词
+  - 示例：`anime, style` 将只加载文件名包含 anime 或 style 的 LoRA
+  - 过滤词不区分大小写
+  - 留空则加载目录下所有 .safetensors 文件
+- **模型强度**：调整 LoRA 模型对生成结果的影响程度
+  - 范围：-100.0 到 100.0
+  - 默认值：1.0
+  - 负值会产生相反的效果
+- **实时预览**：执行后会显示找到的 LoRA 文件列表，方便确认是否正确加载
+
+#### 使用示例
+
+1. 加载单个文件夹：
+   ```
+   lora_folders: myLoras
+   filter_text: (留空)
+   strength_model: 1.0
+   ```
+
+2. 加载多个文件夹并过滤：
+   ```
+   lora_folders: portraits, anime/style
+   filter_text: v1, quality
+   strength_model: 0.8
+   ```
+
+#### 注意事项
+
+- 文件夹路径使用正斜杠 `/` 分隔
+- 目前仅支持 .safetensors 格式的 LoRA 文件
+- 如果找不到任何符合条件的文件，节点会显示"No LoRA files found"
