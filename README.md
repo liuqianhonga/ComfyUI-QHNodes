@@ -2,6 +2,16 @@
 
 为 ComfyUI 开发的自定义节点集合，提供预设尺寸预设Latent、从文件夹加载LoRA。
 
+#### 均是日常使用的节点，以下节点如有需要，可参考使用：
+
+1、[字符串相关节点](https://github.com/liuqianhonga/ComfyUI-String-Helper) 字符串相关的自定义节点，提高在处理字符串时的效率和灵活性。
+
+2、[图像压缩节点](https://github.com/liuqianhonga/ComfyUI-Image-Compressor) 用于图像压缩的ComfyUI自定义节点，支持JPEG、WEBP、PNG压缩格式和参数调整。
+
+3、[Html2Image节点](https://github.com/liuqianhonga/ComfyUI-Html2Image) 提供ComfyUI网页截图、相机水印、自由模板转图片功能节点。
+
+4、[模型下载节点](https://github.com/liuqianhonga/ComfyUI-Model-Downloader) ComfyUI的模型下载节点，支持civitai和huggingface下的模型下载。
+
 ## 安装方法
 
 1. 将此仓库克隆到你的 `ComfyUI/custom_nodes/` 目录下：
