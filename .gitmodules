@@ -1,0 +1,12 @@
+[submodule "external_nodes/ComfyUI-String-Helper"]
+	path = external_nodes/ComfyUI-String-Helper
+	url = https://github.com/liuqianhonga/ComfyUI-String-Helper
+[submodule "external_nodes/ComfyUI-Image-Compressor"]
+	path = external_nodes/ComfyUI-Image-Compressor
+	url = https://github.com/liuqianhonga/ComfyUI-Image-Compressor
+[submodule "external_nodes/ComfyUI-Html2Image"]
+	path = external_nodes/ComfyUI-Html2Image
+	url = https://github.com/liuqianhonga/ComfyUI-Html2Image
+[submodule "external_nodes/ComfyUI-Model-Downloader"]
+	path = external_nodes/ComfyUI-Model-Downloader
+	url = https://github.com/liuqianhonga/ComfyUI-Model-Downloader

@@ -1,30 +1,86 @@
 # ComfyUI-QHNodes
 
-为 ComfyUI 开发的自定义节点集合，提供预设尺寸预设Latent、从文件夹加载LoRA。
+为 ComfyUI 开发的自定义节点集合，提供预设尺寸预设Latent、从文件夹加载LoRA，以及集成了多个常用的自定义节点。
 
-#### 均是日常使用的节点，以下节点如有需要，可参考使用：
+> 所有节点均为日常所用，如有需要，可参考使用
 
-1、[字符串相关节点](https://github.com/liuqianhonga/ComfyUI-String-Helper) 字符串相关的自定义节点，提高在处理字符串时的效率和灵活性。
+## 包含节点
 
-2、[图像压缩节点](https://github.com/liuqianhonga/ComfyUI-Image-Compressor) 用于图像压缩的ComfyUI自定义节点，支持JPEG、WEBP、PNG压缩格式和参数调整。
+### 主仓库节点
 
-3、[Html2Image节点](https://github.com/liuqianhonga/ComfyUI-Html2Image) 提供ComfyUI网页截图、相机水印、自由模板转图片功能节点。
+1. **预设尺寸 (Preset Size Latent)**: 提供常用的图像尺寸预设
+2. **文件夹加载LoRA (Load LoRA from Folder)**: 批量加载指定文件夹中的 LoRA 模型
 
-4、[模型下载节点](https://github.com/liuqianhonga/ComfyUI-Model-Downloader) ComfyUI的模型下载节点，支持civitai和huggingface下的模型下载。
+### 集成的子模块
+
+以下是集成的常用节点，如果不需要所有节点，可单独下载：
+
+1. [字符串相关节点](https://github.com/liuqianhonga/ComfyUI-String-Helper) 
+   - 字符串相关的自定义节点，提高在处理字符串时的效率和灵活性
+
+2. [图像压缩节点](https://github.com/liuqianhonga/ComfyUI-Image-Compressor) 
+   - 用于图像压缩的ComfyUI自定义节点，支持JPEG、WEBP、PNG压缩格式和参数调整
+
+3. [Html2Image节点](https://github.com/liuqianhonga/ComfyUI-Html2Image) 
+   - 提供ComfyUI网页截图、相机水印、自由模板转图片功能节点
+
+4. [模型下载节点](https://github.com/liuqianhonga/ComfyUI-Model-Downloader) 
+   - ComfyUI的模型下载节点，支持civitai和huggingface下的模型下载
 
 ## 安装方法
 
-1. 将此仓库克隆到你的 `ComfyUI/custom_nodes/` 目录下：
+### 场景一：安装所有节点（推荐）
+
+如果你想使用所有功能，可以一次性安装所有节点：
+
+```bash
+cd ComfyUI/custom_nodes/
+git clone --recursive https://github.com/liuqianhonga/ComfyUI-QHNodes.git
+```
+
+### 场景二：仅安装主仓库节点
+
+如果你只想使用预设尺寸和文件夹加载LoRA功能：
+
 ```bash
 cd ComfyUI/custom_nodes/
 git clone https://github.com/liuqianhonga/ComfyUI-QHNodes.git
 ```
 
-2. 重启 ComfyUI
+### 子模块管理（可选）
+
+1. 添加子模块：如果之前只安装了主仓库，现在想添加子模块
+```bash
+cd ComfyUI/custom_nodes/ComfyUI-QHNodes
+git submodule init
+git submodule update
+```
+
+2. 更新子模块：如果想更新子模块到最新版本
+```bash
+cd ComfyUI/custom_nodes/ComfyUI-QHNodes
+git submodule update --remote
+```
+
+安装完成后重启 ComfyUI
+
+## 更新说明
+
+### 更新主仓库
+```bash
+cd ComfyUI/custom_nodes/ComfyUI-QHNodes
+git pull
+```
+
+### 更新所有子模块
+```bash
+cd ComfyUI/custom_nodes/ComfyUI-QHNodes
+git submodule update --remote
+```
 
 ## 节点说明
 
-### 🖼️ 预设尺寸 (Preset Size Latent)
+### 🐟预设尺寸 (Preset Size Latent)
 
 预设尺寸节点，支持以下预设：
 
@@ -170,7 +226,7 @@ git clone https://github.com/liuqianhonga/ComfyUI-QHNodes.git
 }
 ```
 
-### 🐟 Load LoRA (Folder)
+### 🐟Load LoRA (Folder)
 
 从指定文件夹加载 LoRA 模型。支持以下功能：
 

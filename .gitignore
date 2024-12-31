@@ -1,3 +1,6 @@
 # Python
 __pycache__
 output
+
+# Ignore submodule web files
+web/js/submodule_*.js
