@@ -62,7 +62,7 @@ cd ComfyUI/custom_nodes/ComfyUI-QHNodes
 git submodule update --remote
 ```
 
-安装完成后重启 ComfyUI
+所有依赖会在 ComfyUI 启动时自动检查和安装。
 
 ## 更新说明
 

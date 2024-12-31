@@ -1,7 +1,11 @@
+import os
 from .nodes.preset_size_latent import PresetSizeLatent
 from .nodes.load_lora_from_folder import LoadLoraFromFolder
 from .submodules_loader import load_submodules
-import os
+from .requirements_installer import ensure_dependencies
+
+# Check and install dependencies on load
+ensure_dependencies()
 
 # Set category for main repo nodes
 PresetSizeLatent.CATEGORY = "🐟QHNodes"
