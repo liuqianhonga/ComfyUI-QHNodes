@@ -2,12 +2,7 @@ import os
 import folder_paths
 import comfy.utils
 import comfy.sd
-
-class AnyType(str):
-    def __ne__(self, __value: object) -> bool:
-        return False
-
-ANY = AnyType("*")
+from .lib import ANY
 
 class LoadLoraFromFolder:
     def __init__(self):
