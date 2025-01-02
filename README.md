@@ -2,7 +2,7 @@
 
 为 ComfyUI 开发的自定义节点集合，提供预设尺寸预设Latent、从文件夹加载LoRA，以及集成了多个常用的自定义节点。
 
-> 所有节点均为日常所用，如有需要，可参考使用
+> 所有节点均为日常所用，偏定制化，如有需要，可参考
 
 ## 包含节点
 
@@ -11,6 +11,8 @@
 1. **预设尺寸 (Preset Size Latent)**: 提供常用的图像尺寸预设
 2. **文件夹加载LoRA (Load LoRA from Folder)**: 批量加载指定文件夹中的 LoRA 模型
 3. **采样器设置 (Sampler Settings)**: 提供采样器和调度器设置的配置节点
+4. **JSON解包 (JsonUnpack)**: 解析JSON字符串并提取指定的键值，支持最多5个键的提取
+5. **Gemini图像分析 (Gemini)**: 使用Google Gemini模型进行图像分析和描述
 
 ### 集成的子模块
 
@@ -18,6 +20,8 @@
 
 1. [字符串相关节点](https://github.com/liuqianhonga/ComfyUI-String-Helper) 
    - 字符串相关的自定义节点，提高在处理字符串时的效率和灵活性
+   - 支持字符串列表、翻译、CSV导入导出等功能
+   - 提供多种字符串选择方式：按序号选择、顺序循环、随机选择
 
 2. [图像压缩节点](https://github.com/liuqianhonga/ComfyUI-Image-Compressor) 
    - 用于图像压缩的ComfyUI自定义节点，支持JPEG、WEBP、PNG压缩格式和参数调整
@@ -295,3 +299,102 @@ git submodule update --remote
 4. 降噪强度：可配置范围 0.0-1.0，默认 1.0
 
 输出参数类型为 ANY，方便与其他节点对接。
+
+### 🐟JSON解包 (JsonUnpack)
+
+解析JSON字符串并提取指定的键值，支持最多5个键的提取。
+
+- **JSON字符串**：接收JSON字符串作为输入
+  - 支持标准JSON格式
+  - 可以从文本文件或其他节点输出中获取
+- **键值提取**：支持最多5个键的提取
+  - 使用英文逗号分隔多个键
+  - 键名不区分大小写
+  - 如果键不存在会输出空值
+- **输出类型**：输出类型为 ANY，方便与其他节点对接
+
+#### 使用示例
+
+1. 提取单个键值：
+   ```
+   json_string: {"name": "John", "age": 30}
+   keys: name
+   ```
+   输出：John
+
+2. 提取多个键值：
+   ```
+   json_string: {"name": "John", "age": 30, "city": "New York"}
+   keys: name, age, city
+   ```
+   输出：John, 30, New York
+
+#### 注意事项
+
+- JSON字符串必须是标准格式
+- 键值提取不支持嵌套JSON对象
+- 如果键不存在会输出空值
+- 输出类型为 ANY，方便与其他节点对接
+
+### 🐟Gemini图像分析 (Gemini)
+
+使用Google的Gemini模型对图像进行分析和描述，支持多种模型选择和参数调整。
+
+#### 输入参数
+
+- **图像 (image)**：需要分析的图像
+  - 支持ComfyUI标准图像格式
+  - 会自动转换为Gemini支持的格式
+
+- **API密钥 (api_key)**：Google API密钥
+  - 需要有效的Google API密钥
+  - 可以从Google AI Studio获取
+
+- **模型 (model)**：Gemini模型选择
+  - gemini-2.0-flash-exp
+  - gemini-1.5-flash
+  - gemini-1.5-flash-8b
+  - gemini-1.5-pro
+
+- **prompt**：引导模型分析的提示文本
+  - 默认值："Describe this image"
+  - 可以使用自定义提示词引导分析方向
+
+- **temperature**：生成文本的随机性
+  - 范围：0.0-2.0
+  - 默认值：0.8
+  - 较低的值生成更确定的结果
+  - 较高的值生成更多样化的结果
+
+- **max_output_tokens**：生成文本的最大长度
+  - 范围：1-8192
+  - 默认值：2048
+
+#### 输出
+
+- **文本描述**：模型对图像的分析结果
+  - 输出类型：STRING
+  - 可以与其他文本处理节点配合使用
+
+#### 使用示例
+
+1. 基础图像描述：
+   ```
+   prompt: "Describe this image in detail"
+   temperature: 0.8
+   max_output_tokens: 2048
+   ```
+
+2. 特定分析任务：
+   ```
+   prompt: "List all the objects in this image"
+   temperature: 0.3
+   max_output_tokens: 1024
+   ```
+
+#### 注意事项
+
+- 需要有效的Google API密钥
+- API调用可能产生费用，请参考Google的定价政策
+- 较大的图像可能需要更长的处理时间
+- 建议根据具体需求调整temperature和max_output_tokens参数
