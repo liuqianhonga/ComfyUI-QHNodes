@@ -14,10 +14,11 @@ class SamplerSettings:
             },
         }
     
-    RETURN_TYPES = (ANY, ANY, "INT", "FLOAT")
-    RETURN_NAMES = ("sampler_name", "scheduler_name", "steps", "denoise")
+    RETURN_TYPES = (ANY, ANY, "INT", "FLOAT", "STRING")
+    RETURN_NAMES = ("sampler_name", "scheduler_name", "steps", "denoise", "summer")
     FUNCTION = "get_sampler"
     CATEGORY = "🐟QHNodes"
 
     def get_sampler(self, sampler_name, scheduler_name, steps, denoise):
-        return (sampler_name, scheduler_name, steps, denoise)
+        summer = f"{sampler_name} {scheduler_name} {steps} {denoise}"
+        return (sampler_name, scheduler_name, steps, denoise, summer)
