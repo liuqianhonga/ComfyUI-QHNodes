@@ -7,6 +7,7 @@ from .nodes.json_unpack import JsonUnpack
 from .nodes.image_count_from_folder import ImageCountFromFolder
 from .nodes.load_image_from_folder import LoadImageFromFolder
 from .nodes.file_save import FileSave
+from .nodes.unified_prompt_generator import UnifiedPromptGeneratorNode
 from .submodules_loader import load_submodules
 from .requirements_installer import ensure_dependencies
 
@@ -22,6 +23,7 @@ JsonUnpack.CATEGORY = "🐟QHNodes"
 ImageCountFromFolder.CATEGORY = "🐟QHNodes"
 LoadImageFromFolder.CATEGORY = "🐟QHNodes"
 FileSave.CATEGORY = "🐟QHNodes"
+UnifiedPromptGeneratorNode.CATEGORY = "🐟QHNodes"
 
 # Load submodules
 submodule_nodes, submodule_display_names = load_submodules(os.path.dirname(__file__))
@@ -36,6 +38,7 @@ NODE_CLASS_MAPPINGS = {
     "ImageCountFromFolder": ImageCountFromFolder,
     "LoadImageFromFolder": LoadImageFromFolder,
     "FileSave": FileSave,
+    "UnifiedPromptGenerator": UnifiedPromptGeneratorNode,
     **submodule_nodes
 }
 
@@ -48,6 +51,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ImageCountFromFolder": "🐟Image Count From Folder",
     "LoadImageFromFolder": "🐟Load Image From Folder",
     "FileSave": "🐟File Save",
+    "UnifiedPromptGenerator": "🐟Unified Prompt Generator",
     **submodule_display_names
 }
 
