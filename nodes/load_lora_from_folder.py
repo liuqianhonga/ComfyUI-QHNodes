@@ -46,7 +46,10 @@ class LoadLoraFromFolder:
         lora_files = []
         for folder in folders:
             # Build full path
-            full_path = os.path.join(self.lora_path, folder)
+            if os.path.isabs(folder):
+                full_path = folder
+            else:
+                full_path = os.path.join(self.lora_path, folder)
             
             # Check if path exists
             if not os.path.exists(full_path):
