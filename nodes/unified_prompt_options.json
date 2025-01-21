@@ -1,5 +1,20 @@
 {
     "appearance": {
+        "age_gender": {
+            "default": "young adult female(年轻女性)",
+            "choices": [
+                "none(无)",
+                "young adult female(年轻女性)",
+                "teenage girl(少女)",
+                "mature woman(成熟女性)",
+                "middle-aged woman(中年女性)",
+                "young adult male(年轻男性)",
+                "teenage boy(少年)",
+                "mature man(成熟男性)",
+                "middle-aged man(中年男性)",
+                "androgynous young adult(中性年轻人)"
+            ]
+        },
         "race": {
             "default": "east asian(东亚人)",
             "choices": [
@@ -43,11 +58,32 @@
             ]
         },
         "skin": {
-            "default": "fair skin(白皙肤色)",
+            "default": "fair skin with rosy undertones(白皙肤色带玫瑰底色)",
             "choices": [
-                "fair skin(白皙肤色)",
-                "medium skin(中等肤色)",
-                "dark skin(深色肤色)"
+                "none(无)",
+                "fair skin with rosy undertones(白皙肤色带玫瑰底色)",
+                "porcelain skin with subtle pink flush(瓷白肌肤带淡淡粉红)",
+                "ivory skin with warm golden undertones(象牙白肤色带温暖金调)",
+                "light skin with peach undertones(浅色肌肤带桃色底色)",
+                "cream skin with natural glow(奶油色肌肤带自然光泽)",
+                
+                "medium skin with honey undertones(中等肤色带蜜糖底色)",
+                "olive skin with warm undertones(橄榄色肤色带温暖底色)",
+                "tan skin with golden highlights(小麦色肤色带金色光泽)",
+                "caramel skin with warm glow(焦糖色肤色带温暖光泽)",
+                "bronze skin with sun-kissed glow(古铜色肤色带阳光光泽)",
+                
+                "deep brown skin with rich undertones(深棕色肤色带丰富底色)",
+                "rich mahogany skin with warm glow(红木色肤色带温暖光泽)",
+                "ebony skin with radiant sheen(乌木色肤色带光泽)",
+                "dark skin with golden undertones(深色肤色带金色底色)",
+                
+                "flawless skin with dewy finish(无瑕肌肤带露珠光泽)",
+                "smooth skin with matte finish(光滑肌肤带哑光质地)",
+                "glowing skin with pearl sheen(发光肌肤带珍珠光泽)",
+                "luminous skin with glass-like finish(透亮肌肤带玻璃光泽)",
+                "radiant skin with healthy flush(容光焕发的肌肤带健康红润)",
+                "silky skin with natural luminosity(丝滑肌肤带自然光泽)"
             ]
         },
         "eyes": {
@@ -66,16 +102,26 @@
                 "thin lips(薄嘴唇)"
             ]
         },
-        "body":{
-            "default": "well-defined curves(明显的曲线)",
+        "body": {
+            "default": "perfect hourglass figure: slim waist with full bust and hips in ideal proportion, smooth curves flowing naturally, long elegant neck(完美沙漏身材：纤细腰身配合丰满上围和臀部的理想比例，曲线自然流畅，优雅修长颈部)",
             "choices": [
                 "none(无)",
-                "well-defined curves(明显的曲线)",
-                "subtle curves(柔和的曲线)",
-                "athletic build(运动型身材)",
-                "long legs(长腿)",
-                "proportional legs(比例匀称的腿)",
-                "a slender figure with well-defined curves, presenting an hourglass shape(有明显曲线的苗条身材，呈梨形身材)"
+                "perfect hourglass figure: slim waist with full bust and hips in ideal proportion, smooth curves flowing naturally, long elegant neck(完美沙漏身材：纤细腰身配合丰满上围和臀部的理想比例，曲线自然流畅，优雅修长颈部)",
+                "curvy hourglass: voluptuous figure with prominent bust, tiny waist and full hips, soft feminine curves throughout body(丰满沙漏：丰满上围，纤细腰身和丰满臀部，全身柔美曲线)",
+                "athletic hourglass: toned figure with defined waist, athletic bust and sculpted hips, lean muscle definition(运动沙漏：紧致身材，收腰，运动感上围和雕塑感臀部，匀称肌肉线条)",
+                "slim model figure: tall and slender build with long limbs, elegant proportions, subtle natural curves(纤细模特身材：高挑苗条，四肢修长，优雅比例，自然柔和曲线)",
+                "petite slim: delicate small frame with fine bone structure, small bust and slim hips, graceful proportions(娇小纤细：精致小巧骨架，娇小上围和纤细臀部，优雅比例)",
+                "willowy figure: tall and reed-slim with long legs, straight elegant lines, subtle curves(柳条身材：高挑纤细，长腿，优雅直线条，细微曲线)",
+                "fit athletic: well-toned body with defined muscles, medium bust and firm curves, strong yet feminine silhouette(健身运动型：良好肌肉线条，中等上围和紧致曲线，强韧中带女性美)",
+                "lean athletic: slender muscular build with small firm bust, defined abs, long toned legs(精瘦运动型：纤细肌肉型，小巧紧致上围，腹肌线条，修长紧致双腿)",
+                "sporty balanced: athletic build with proportional bust, toned waist and strong legs, harmonious muscle definition(均衡运动型：运动体格，匀称上围，紧致腰身和强健双腿，和谐肌肉线条)",
+                "balanced natural: medium build with harmonious proportions, natural bust size, smooth flowing lines(自然均衡型：中等体格，和谐比例，自然上围，流畅线条)",
+                "proportional curvy: evenly distributed curves with medium-full bust, defined waist, rounded hips(均衡曲线型：均匀分布曲线，中等丰满上围，明显腰身，圆润臀部)",
+                "classic balanced: well-proportioned figure with moderate curves, medium bust and hips in harmony(经典均衡型：良好比例，适中曲线，中等上围和臀部和谐)",
+                "long-legged: exceptionally long legs with slim ankles, proportional upper body, elegant height(长腿型：特长双腿，纤细脚踝，匀称上半身，优雅身高)",
+                "small-waisted: dramatically small waist with proportional bust and hips, defined waistline(细腰型：显著纤细腰身，匀称上围和臀部，明显腰线)",
+                "full-busted: generous bust with slim waist and proportional hips, feminine silhouette(丰满上围：丰满胸部，纤细腰身和匀称臀部，女性化轮廓)",
+                "toned-slim: lean figure with subtle muscle definition, small firm bust, long limbs(紧致纤细：精瘦身材，细微肌肉线条，小巧紧实上围，修长四肢)"
             ]
         }
     },
@@ -85,11 +131,11 @@
             "choices": [
                 "none(无)",
                 "white cropped t-shirt with pink trim(白色露脐T恤，粉色边饰)",
-                "oversized beige sweater(米色宽松毛衣)",
+                "oversized beige Burberry sweater(Burberry米色宽松毛衣)",
                 "black leather jacket over white crop top(黑色皮夹克配白色露脐上衣)",
-                "pastel pink blazer with white tank top(粉色西装外套配白色背心)",
-                "cozy knit turtleneck sweater(舒适的高领毛衣)",
-                "silk emerald green blouse(祖母绿丝绸衬衫)",
+                "pastel pink Chanel tweed blazer with white tank top(香奈儿粉色花呢外套配白色背心)",
+                "cozy Acne Studios knit turtleneck sweater(Acne Studios舒适高领毛衣)",
+                "silk emerald green Gucci blouse(古驰祖母绿丝绸衬衫)",
                 "black turtleneck(黑色高领)",
                 "white off-shoulder top(白色一字肩上衣)",
                 "purple tie-dye hoodie(紫色扎染卫衣)",
@@ -103,10 +149,10 @@
             "choices": [
                 "none(无)",
                 "high-waisted pink shorts(高腰粉色短裤)",
-                "blue ripped jeans(蓝色破洞牛仔裤)",
-                "high-waisted black skinny jeans(高腰黑色紧身牛仔裤)",
-                "white wide-leg pants(白色阔腿裤)",
-                "red plaid mini skirt(红色格子短裙)",
+                "Levi's blue ripped jeans(Levi's蓝色破洞牛仔裤)",
+                "high-waisted black Acne Studios skinny jeans(Acne Studios高腰黑色紧身牛仔裤)",
+                "white Stella McCartney wide-leg pants(Stella McCartney白色阔腿裤)",
+                "red plaid Vivienne Westwood mini skirt(Vivienne Westwood红色格子短裙)",
                 "light blue mom jeans(浅蓝色妈妈牛仔裤)",
                 "black leggings(黑色打底裤)",
                 "mint green tennis skirt(薄荷绿网球裙)",
@@ -120,49 +166,136 @@
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "white sneakers(白色运动鞋)",
-                "black heels(黑色高跟鞋)",
-                "knee-high boots(及膝长靴)",
-                "canvas shoes(帆布鞋)",
-                "strappy high heels(细带高跟鞋)",
-                "ballet flats(芭蕾平底鞋)",
-                "chunky sneakers(厚底运动鞋)",
-                "kitten heels(小猫跟)",
-                "combat boots(军靴)",
-                "nude sandals(裸色凉鞋)"
+                "white Nike Air Force 1 sneakers(耐克空军一号白色运动鞋)",
+                "black Christian Louboutin stiletto heels(路易威登黑色细高跟鞋)",
+                "Stuart Weitzman knee-high boots(Stuart Weitzman及膝长靴)",
+                "Converse Chuck 70 canvas shoes(匡威70s帆布鞋)",
+                "Jimmy Choo strappy high heels(周仰杰细带高跟鞋)",
+                "Chanel leather ballet flats(香奈儿皮革芭蕾平底鞋)",
+                "Balenciaga Triple S chunky sneakers(巴黎世家Triple S厚底运动鞋)",
+                "Manolo Blahnik kitten heels(莫罗伯兰克小猫跟)",
+                "Dr. Martens combat boots(马丁博士军靴)",
+                "Hermès Oran sandals(爱马仕Oran凉鞋)"
+            ]
+        },
+        "hat": {
+            "default": "none(无)",
+            "choices": [
+                "none(无)",
+                "white Nike Sportswear Heritage86 cap(耐克Heritage86白色棒球帽)",
+                "black Kangol beret(康格鲁黑色贝雷帽)",
+                "beige Burberry bucket hat(博柏利米色渔夫帽)",
+                "Hermès silk ribbon straw sun hat(爱马仕丝带草编太阳帽)",
+                "Acne Studios knitted beanie(Acne Studios针织无檐帽)",
+                "Maison Michel wide brim felt hat(米歇尔世家宽檐毡帽)",
+                "vintage Brixton newsboy cap(Brixton复古报童帽)",
+                "Borsalino classic fedora with band(波索里诺经典饰带软呢帽)",
+                "Gucci GG canvas visor cap(古驰GG帆布遮阳帽)",
+                "Chanel camellia decorated sun hat(香奈儿山茶花装饰太阳帽)",
+                "Supreme box logo beanie(Supreme盒子标识无檐帽)",
+                "Ralph Lauren polo sports cap(拉夫劳伦polo运动帽)",
+                "Prada Re-Nylon bucket hat(普拉达再生尼龙渔夫帽)",
+                "Jacquemus Le Bob Gadjo bucket hat(Jacquemus经典渔夫帽)",
+                "Celine wool felt wide brim hat(赛琳羊毛毡宽檐帽)"
+            ]
+        },
+        "jewelry": {
+            "default": "none(无)",
+            "choices": [
+                "none(无)",
+                "delicate Cartier gold Love necklace(卡地亚金色Love项链)",
+                "Tiffany & Co. pearl earrings(蒂芙尼珍珠耳环)",
+                "Van Cleef & Arpels Alhambra bracelet stack(梵克雅宝四叶草手链组合)",
+                "minimalist Bulgari B.zero1 rings(宝格丽B.zero1简约戒指)",
+                "Chopard crystal pendant necklace(萧邦水晶吊坠项链)",
+                "hoop earrings(圆环耳环)",
+                "charm bracelet(串珠手链)",
+                "layered necklaces(多层项链)",
+                "statement cocktail ring(夸张的鸡尾酒戒指)",
+                "anklet with tiny bells(带小铃铛的脚链)",
+                "vintage brooch(复古胸针)",
+                "dainty butterfly hair clips(精致的蝴蝶发夹)",
+                "pearl hair pins(珍珠发卡)",
+                "silk scarf(丝巾)",
+                "leather belt with gold buckle(金扣皮带)"
+            ]
+        },
+        "glasses": {
+            "default": "none(无)",
+            "choices": [
+                "none(无)",
+                "round wire-frame glasses(圆形金属框眼镜)",
+                "cat-eye sunglasses(猫眼墨镜)",
+                "oversized square sunglasses(大框方形墨镜)",
+                "classic aviator sunglasses(经典飞行员墨镜)",
+                "transparent frame glasses(透明框眼镜)",
+                "retro round sunglasses(复古圆形墨镜)",
+                "rimless glasses(无框眼镜)",
+                "tortoise shell glasses(玳瑁框眼镜)",
+                "tinted lens fashion glasses(彩色镜片装饰眼镜)",
+                "sport sunglasses(运动墨镜)",
+                "black silk blindfold(黑色丝质眼罩)",
+                "lace eye mask(蕾丝眼罩)",
+                "elegant silk eye mask with gold embroidery(金丝绣花丝质眼罩)",
+                "sheer chiffon scarf over eyes(覆盖眼睛的薄雪纺丝巾)",
+                "delicate lace veil partially covering eyes(部分遮盖眼睛的精致蕾丝面纱)",
+                "translucent silk scarf draped over head and eyes(披在头部和眼睛上的半透明丝巾)"
+            ]
+        },
+        "handbag": {
+            "default": "none(无)",
+            "choices": [
+                "none(无)",
+                "classic black leather Chanel flap bag(香奈儿经典黑色皮革翻盖包)",
+                "small white Louis Vuitton crossbody bag(路易威登小巧白色斜挎包)",
+                "luxury beige Hermès Birkin tote bag(爱马仕米色铂金包)",
+                "mini pink Dior chain Lady bag(迪奥粉色迷你链条Lady包)",
+                "brown leather Mulberry Alexa satchel bag(玛百莉棕色皮革Alexa邮差包)",
+                "elegant gold YSL clutch(圣罗兰优雅金色手拿包)",
+                "vintage quilted Chanel 2.55 bag(香奈儿复古绗缝2.55包)",
+                "casual Longchamp canvas tote bag(珑骧休闲帆布托特包)",
+                "structured Fendi Peekaboo bag(芬迪硬挺Peekaboo手提包)",
+                "woven Loewe straw basket bag(罗意威编织草编篮子包)",
+                "metallic Bottega Veneta Pouch clutch(宝缇嘉金属光泽Pouch手拿包)",
+                "slouchy Balenciaga Hobo bag(巴黎世家随性月牙包)",
+                "trendy Gucci bucket bag(古驰时尚水桶包)",
+                "chic Prada nylon backpack(普拉达时髦尼龙双肩包)",
+                "embellished Roger Vivier evening bag(罗杰·维维亚装饰华丽的晚宴包)"
             ]
         }
     },
     "pose_expression": {
         "pose": {
-            "default": "standing with one hand on her hip, leaning slightly forward(一只手叉腰，微微前倾站立)",
+            "default": "none(无)",
             "choices": [
                 "none(无)",
-                "standing with one hand on her hip, leaning slightly forward(一只手叉腰，微微前倾站立)",
-                "sitting cross-legged on a chair with hands folded in lap(双手交叠放在膝上，盘腿坐在椅子上)",
-                "walking gracefully with a natural swing of arms(优雅行走，手臂自然摆动)",
-                "standing straight with hands clasped behind back(双手背在身后，笔直站立)",
-                "leaning against a wall with one foot propped up(一只脚抵在墙上，靠墙而立)",
-                "sitting on the edge of a table with legs crossed at ankles(坐在桌边，脚踝交叉)",
-                "standing with weight on one leg, other leg slightly bent(单腿承重，另一条腿微曲)",
-                "posing with both hands in pockets, shoulders relaxed(双手插兜，肩膀放松)",
-                "sitting sideways on a chair, looking over shoulder(侧坐在椅子上，回头看)",
-                "standing with arms crossed, head tilted slightly(双臂交叉，头部微倾)",
-                "kneeling on one knee, hands resting on thigh(单膝跪地，手放在大腿上)",
-                "twirling with arms outstretched, dress flowing(张开双臂旋转，裙摆飘动)",
-                "sitting on steps with arms resting on knees(坐在台阶上，手臂放在膝盖上)",
-                "leaning forward over a railing, looking down(俯身靠在栏杆上，向下看)",
-                "standing with hands behind head, elbows out(双手放在脑后，张开手肘)",
-                "sitting with legs tucked to side, hands supporting(腿侧收，手撑地坐姿)",
-                "mid-stride walking pose with confident posture(迈步行走姿势，姿态自信)",
-                "casual stance with one hand in pocket, other hand gesturing(一手插兜，另一手比划的随意站姿)",
-                "ballerina pose with arms in third position(芭蕾舞者第三位手位)",
-                "stretching arms above head, slight back arch(双臂上举伸展，后背微弓)",
-                "candid laughing pose with hand near mouth(手掩嘴笑的自然姿态)",
-                "elegant pose with hand touching hair(优雅地抚摸头发)",
-                "dynamic pose with one arm reaching up(一只手向上伸展的动态姿势)",
-                "contemplative pose with hand under chin(手托下巴的沉思姿势)",
-                "playful pose with peace sign near face(在脸旁比划剪刀手的俏皮姿势)"
+                "standing.contrapposto: standing with weight on one leg, hip slightly tilted, shoulders balanced, arms relaxed(站姿.对比姿势：重心在一条腿上，臀部微倾，肩膀平衡，手臂放松)",
+                "standing.fashion: standing straight, one foot slightly forward, hand on hip, chin slightly down(站姿.时尚：笔直站立，一只脚略前，手放臀部，下巴略低)",
+                "standing.s_curve: standing with curved body line, one hip out, shoulders back, head gracefully tilted(站姿.S曲线：站姿体现曲线，一侧臀部突出，肩膀后收，头部优雅倾斜)",
+                
+                "sitting.cross_legged: sitting relaxed on chair, legs elegantly crossed, hands naturally placed in lap(坐姿.翘腿：放松坐在椅子上，优雅交叉双腿，手自然放在大腿上)",
+                "sitting.edge_perch: sitting on furniture edge, one leg crossed over knee, upper body turned slightly(坐姿.边缘：坐在家具边缘，一条腿搭在膝盖上，上身稍微转动)",
+                "sitting.ground: sitting on floor with legs tucked to side, one hand supporting weight(坐姿.地面：坐在地上，腿侧收，一只手撑地)",
+                
+                "movement.walking: mid-stride with natural arm swing, shoulders back, head high(动态.行走：迈步瞬间，手臂自然摆动，肩膀后收，抬头挺胸)",
+                "movement.turning: body in mid-turn, dress/hair in motion, arms flowing with movement(动态.转身：转身瞬间，裙摆/头发飘动，手臂随动作流动)",
+                "movement.leaping: caught in mid-jump, arms extended, body showing graceful line(动态.跳跃：跳跃瞬间，手臂展开，身体展现优美线条)",
+                
+                "leaning.wall: relaxed lean against wall, one foot crossed over other, shoulders touching wall(倚靠.墙：放松靠墙，一只脚交叉，肩膀贴墙)",
+                "leaning.rail: leaning on railing, body angled, looking into distance(倚靠.栏杆：靠在栏杆上，身体成角度，眺望远方)",
+                "leaning.casual: relaxed lean on furniture, weight on one leg, natural arm position(倚靠.随意：随意靠在家具上，重心在一条腿上，手臂自然放置)",
+                
+                "editorial.high_fashion: exaggerated contrapposto, angular arms, strong jaw line(杂志.高级时尚：夸张的对比姿势，棱角分明的手臂，强烈的下颌线)",
+                "editorial.crouch: stylized squat, elbows on knees, face in profile(杂志.蹲姿：风格化蹲姿，手肘放在膝盖上，侧脸示人)",
+                "editorial.avant_garde: asymmetrical pose with artistic body angles and limb placement(杂志.前卫：不对称的姿势，艺术性的身体角度和肢体摆放)",
+                
+                "portrait.beauty: shoulders at angle, chin slightly down, eyes to camera(肖像.美人：肩膀成角度，下巴略低，目视镜头)",
+                "portrait.profile: clean side view, neck elongated, shoulders back(肖像.侧面：清晰的侧面视角，颈部伸长，肩膀后收)",
+                "portrait.over_shoulder: body turned away, head looking back over shoulder(肖像.回眸：身体背对，头部转回看向肩膀)",
+                
+                "candid.laugh: genuine smile, slightly bent forward, hands near face(自然.笑容：真诚的笑容，略微前倾，手靠近脸部)",
+                "candid.motion: natural walking pause, mid-gesture, candid expression(自然.动作：自然行走停顿，手势半途，自然表情)",
+                "candid.moment: relaxed stance, genuine smile, natural hand placement(自然.时刻：放松姿态，真实笑容，自然手势)"
             ]
         },
         "expression": {
@@ -188,75 +321,61 @@
         }
     },
     "environment": {
-        "scene": {
-            "default": "epic mountain vista with dramatic clouds and aurora in the sky above, clear foreground plateau below(上方是史诗般的山景、壮丽的云层和极光，下方是清晰的高原前景)",
+        "scene_preset": {
+            "default": "none(无)",
             "choices": [
                 "none(无)",
-                "epic mountain vista with dramatic clouds and aurora in the sky above, clear foreground plateau below(上方是史诗般的山景、壮丽的云层和极光，下方是清晰的高原前景)",
-                "majestic floating palace with golden light and dragon motifs above, grand marble stairs below(上方是金光笼罩的浮空宫殿与龙纹图案，下方是宏伟的大理石阶梯)",
-                "celestial realm with rainbow bridges and ethereal pavilions above, misty crystal platform below(上方是天界的彩虹桥与空灵亭阁，下方是迷雾缭绕的水晶平台)",
-                "modern skyscraper glass facade reflecting sunset above, elegant hotel lobby below(上方是反射晚霞的现代摩天大楼玻璃幕墙，下方是优雅的酒店大堂)",
-                "luxury hotel crystal chandelier ceiling above, marble floor grand entrance below(上方是豪华酒店水晶吊灯天花板，下方是大理石地面的宏伟入口)",
-                "high-end shopping mall atrium skylight above, designer boutique showcase below(上方是高端商场中庭采光顶，下方是设计师精品店展示区)",
-                "art deco theater ornate ceiling above, grand staircase with red carpet below(上方是装饰艺术风格剧院华丽天花板，下方是铺着红毯的宏伟楼梯)",
-                "ancient cherry blossom canopy with filtered sunlight above, stone garden path below(上方是阳光透过古老樱花树冠，下方是石板花园小径)",
-                "majestic waterfall cascading from cliff face above, misty viewing platform below(上方是从悬崖倾泻而下的瀑布，下方是雾气缭绕的观景平台)",
-                "dense forest canopy with streaming sunbeams above, moss-covered stone steps below(上方是阳光穿透茂密林冠，下方是覆满青苔的石阶)",
-                "sunset-painted clouds over ocean horizon above, pristine sandy beach below(上方是日落染红的海平面云彩，下方是原始纯净的沙滩)",
-                "iconic city skyline with dramatic clouds above, bustling shopping street below(上方是标志性的城市天际线和壮丽云彩，下方是熙熙攘攘的商业街)",
-                "historic architecture facade with ornate details above, european style cafe terrace below(上方是历史建筑精美立面细节，下方是欧式咖啡馆露台)",
-                "neon-lit urban nightscape above, vibrant street market scene below(上方是霓虹闪烁的城市夜景，下方是热闹的街市场景)",
-                "traditional chinese architecture eaves above, lantern-decorated alley below(上方是中国传统建筑飞檐，下方是装饰着灯笼的巷道)",
-                "grand ballroom crystal chandelier ceiling above, polished dance floor below(上方是宴会厅水晶吊灯天花板，下方是光亮的舞池地面)",
-                "art gallery skylight with natural light above, minimalist exhibition space below(上方是美术馆自然采光天窗，下方是极简主义展览空间)",
-                "vintage bookstore wooden beam ceiling above, antique bookshelf-lined space below(上方是古董书店木梁天花板，下方是古董书架环绕的空间)",
-                "greenhouse glass dome with climbing vines above, botanical garden path below(上方是攀满藤蔓的温室玻璃穹顶，下方是植物园小径)"
-            ]
-        },
-        "lighting": {
-            "default": "soft and even lighting(柔和均匀的光线)",
-            "choices": [
-                "none(无)",
-                "soft and even lighting(柔和均匀的光线)",
-                "warm ambient lighting(温暖的环境光)",
-                "natural sunlight(自然阳光)",
-                "dramatic spotlighting(戏剧性聚光)",
-                "moody low-key lighting(氛围低调光线)",
-                "golden hour sunlight(黄金时段阳光)",
-                "cool blue evening light(清凉的蓝色夜光)",
-                "diffused daylight through windows(窗户透进的漫射日光)"
+                "commercial_spaces.mall_boutique: luxury brand flagship store facade with elegant window displays, mall atrium skylight casting soft diffused light from above on subject's face and outfit while illuminating store displays with bright even lighting, creating gentle shadows under cheekbones and subtle highlights on hair, environment filled with balanced ambient light that reveals architectural details(商业空间.精品商场：优雅橱窗陈列的旗舰店外立面，商场中庭天窗从上方投射柔和漫射光打在人物脸部和服装上，同时明亮均匀地照亮商店展示，在颧骨下方形成温和阴影，头发上产生细腻光泽，环境充满平衡的环境光展现建筑细节)",
+                "commercial_spaces.cafe: cute themed cafe with pastel decor and neon signs, warm string lights creating a soft glow around subject's silhouette while casting gentle shadows across face, neon accents adding colorful highlights to hair and skin, ambient cafe lighting providing warm fill light that softens features and illuminates decor details(商业空间.咖啡店：粉彩装饰与霓虹灯的主题咖啡店，温暖串灯在人物轮廓周围创造柔和光晕并在脸部投射温和阴影，霓虹灯为头发和肌肤添加彩色高光，咖啡店环境光提供温暖补光柔化特征并照亮装饰细节)",
+                "natural_scenes.sunset: seaside boardwalk with palm trees and ocean view, golden hour sunlight casting long dramatic shadows while creating warm rim light around subject's silhouette, soft reflected light from ocean providing gentle fill light on face, environment bathed in rich amber tones with palm shadows creating dynamic patterns(自然场景.日落：棕榈树和海景木栈道，黄金时刻阳光投射戏剧性长阴影同时在人物轮廓周围创造温暖轮廓光，海面反射的柔光为脸部提供温和补光，环境沐浴在丰富的琥珀色调中，棕榈树影创造动态图案)",
+                "professional_settings.studio: photo studio with white cyclorama background, main light sculpting facial features with soft shadows, fill light gently illuminating shadow areas, rim light defining body silhouette against background, reflectors providing subtle highlights in eyes and hair(专业场景.摄影棚：白色无限背景，主光塑造面部特征形成柔和阴影，补光温和照亮阴影区域，轮廓光勾勒人物身体轮廓，反光板在眼睛和头发上创造细腻高光)",
+                "night_scenes.urban_night: bustling shopping district with fashion boutiques and neon signs, colorful neon lights casting vibrant highlights across face and outfit, street lamps providing warm top light, shop windows adding soft fill light from multiple angles, creating a dynamic interplay of colored shadows and highlights(夜景.城市夜景：时尚精品店和霓虹招牌的繁华商业区，彩色霓虹灯在脸部和服装上投射鲜艳高光，路灯提供温暖顶光，橱窗提供多角度柔和补光，营造色彩阴影和高光的动态交互)",
+                "indoor_natural_light.window_scene: art gallery space with minimalist white walls and track lighting, soft natural window light creating gentle shadows across face while providing main illumination, warm indoor lights adding fill light to shadow areas, track lights highlighting specific features and creating depth through selective lighting(室内自然光.窗景：极简白墙和轨道灯的艺术画廊，柔和自然窗光在脸部创造温和阴影并提供主要照明，温暖室内灯光为阴影区域补光，轨道灯突出特定特征并通过选择性照明创造深度)",
+                "natural_scenes.dawn: misty meadow at sunrise with dewdrops on grass, early morning sunlight casting long soft shadows while creating golden rim light on subject's silhouette, cool ambient light mixing with warm directional rays, morning mist diffusing light and adding atmospheric depth(自然场景.黎明：晨露草地的清晨，朝阳投射柔和长影同时在人物轮廓形成金色轮廓光，清凉环境光与温暖定向光交融，晨雾漫射光线增添氛围深度)",
+                "natural_scenes.golden_sunset: rolling hills bathed in golden light, intense warm sunlight creating dramatic rim lighting and long shadows, sky colors reflecting off skin with warm orange tones, backlit dust particles adding atmospheric glow(自然场景.金色日落：沐浴在金光中的起伏丘陵，强烈温暖阳光创造戏剧性轮廓光和长阴影，天空色彩在皮肤上反射温暖橙色调，逆光尘埃增添大气光晕)",
+                "natural_scenes.summer_noon: sun-drenched garden with vibrant flowers, harsh overhead sunlight creating strong shadows and bright highlights, heat shimmer adding atmospheric distortion, reflected light from surrounding foliage providing natural fill(自然场景.夏日正午：阳光普照的花园，强烈顶光形成深邃阴影和明亮高光，热浪扭曲增添氛围，周围植物反射光提供自然补光)",
+                "natural_scenes.cloudy_afternoon: overcast sky over wildflower field, soft diffused lighting eliminating harsh shadows, even illumination across subject, muted colors with enhanced texture detail(自然场景.阴天午后：野花田野上的阴云，柔和漫射光消除硬阴影，主体均匀照明，柔和色彩突显纹理细节)",
+                "urban_decay.abandoned_corner: weathered concrete walls with peeling paint, filtered sunlight through broken windows creating dramatic light beams, ambient bounce light softening shadows, dust particles catching light rays(城市废墟.废弃角落：斑驳混凝土墙面，破碎窗户透过的阳光形成戏剧性光束，环境反射光软化阴影，灰尘颗粒捕捉光线)",
+                "urban_decay.overgrown_ruins: crumbling architecture overtaken by vegetation, dappled sunlight filtering through leaves creating dynamic patterns, soft green bounce light from foliage, natural rim lighting through gaps(城市废墟.杂草遗迹：被植被占据的破败建筑，树叶过滤的斑驳阳光创造动态图案，植物柔和绿色反光，缝隙透过的自然轮廓光)",
+                "wild_nature.dense_forest: thick forest canopy with filtered light, soft green ambient light from leaves, dramatic light beams piercing through trees, dappled shadows creating dynamic patterns(野性自然.茂密森林：浓密树冠过滤光线，叶片柔和绿色环境光，穿透树林的戏剧性光束，斑驳阴影创造动态图案)",
+                "wild_nature.mountain_vista: rugged mountain landscape at dawn, early sunlight creating dramatic shadows across valleys, cool ambient light from sky, warm directional light highlighting terrain(野性自然.山景：黎明时分的崎岖山景，晨光在山谷间投射戏剧性阴影，天空清凉环境光，温暖定向光突显地形)",
+                "urban_night.rain_street: wet city street reflecting neon lights, raindrops catching and splitting light creating sparkles, diffused glow through mist, multiple colored light sources creating complex shadows(城市夜景.雨街：反射霓虹的湿润街道，雨滴捕捉折射光线形成闪烁，薄雾中的漫射光晕，多彩光源创造复杂阴影)",
+                "urban_night.subway_entrance: underground station entrance with mixed lighting, fluorescent overhead lights creating stark shadows, distant street lights adding warm accents, reflected light from wet surfaces(城市夜景.地铁入口：混合照明的地下站台入口，荧光顶灯创造鲜明阴影，远处街灯增添温暖重点，潮湿表面反射光)"
             ]
         }
     },
     "photography": {
         "composition": {
-            "default": "rule of thirds with small figure in lower third, vast scene above(三分法构图，下方小人物，上方广阔场景)",
+            "default": "centered full-length figure composition with balanced negative space(居中全身人物构图，平衡留白)",
             "choices": [
                 "none(无)",
-                "rule of thirds with small figure in lower third, vast scene above(三分法构图，下方小人物，上方广阔场景)",
-                "tiny figure at golden ratio point with dominant environment(人物位于黄金分割点，环境主导画面)",
-                "small figure in lower quarter with expansive scene filling frame(人物在下四分之一，广阔场景充满画面)",
-                "diminutive figure at 15% scale in lower third(人物在下三分之一，比例15%)",
-                "figure at 20% scale balanced with vast environmental space(人物比例20%，与广阔环境空间平衡)",
-                "minimal figure presence with maximized scenic impact(人物存在感最小化，场景影响最大化)",
-                "small figure silhouette against grand environmental backdrop(小人物剪影对比宏大环境背景)",
-                "subtle figure placement within sweeping landscape(人物在辽阔风景中的微妙布局)",
-                "harmonious small figure integration in epic scene(小人物在史诗场景中的和谐融合)"
+                "centered full-length figure composition with balanced negative space(居中全身人物构图，平衡留白)",
+                "rule of thirds composition with figure on right third(三分法构图，人物位于右三分线)",
+                "golden ratio composition with figure at power point(黄金分割构图，人物位于重要点)",
+                "symmetrical composition with figure in center(对称构图，人物居中)",
+                "diagonal composition with dynamic lines(对角线构图，动态线条)",
+                "frame-within-frame composition using environment(环境框架式构图)",
+                "leading lines composition drawing focus to figure(引导线构图突出人物)",
+                "balanced asymmetrical composition with weighted elements(平衡的不对称构图，元素权重分配)",
+                "triangular composition with stable base(三角形构图，稳定基础)",
+                "s-curve composition for elegant flow(S曲线构图，优雅流动感)"
             ]
         },
         "view": {
-            "default": "wide establishing shot with small figure in grand environment(广角场景镜头，人物小而环境宏大)",
+            "default": "full-body view from medium distance, figure at 70% frame height(中等距离全身视角，人物占画面70%高度)",
             "choices": [
                 "none(无)",
-                "wide establishing shot with small figure in grand environment(广角场景镜头，人物小而环境宏大)",
-                "extreme wide shot with tiny figure dwarfed by vast environment(超广角镜头，人物极小被宏大环境衬托)",
-                "panoramic view with figure occupying 10% of frame(全景视角，人物占画面10%)",
-                "environmental wide shot with figure at 15% scale(环境广角镜头，人物比例15%)",
-                "distant view with figure naturally integrated in scene(远景拍摄，人物自然融入场景)",
-                "atmospheric wide shot with small elegant figure(氛围广角镜头，小而优雅的人物)",
-                "expansive view with figure as focal point at 20% scale(开阔视角，人物作为20%比例的焦点)",
-                "balanced wide shot with figure at comfortable 25% scale(平衡的广角镜头，人物舒适比例25%)",
-                "cinematic wide with figure harmoniously placed at 30%(电影感广角，人物和谐占比30%)"
+                "full-body view from medium distance, figure at 70% frame height(中等距离全身视角，人物占画面70%高度)",
+                "wide establishing view showing full environment(展示完整环境的广角视角)",
+                "close full-body view with minimal environment(最少环境的近距离全身视角)",
+                "medium-wide view balancing figure and environment(平衡人物与环境的中广角视角)",
+                "expansive view with environmental context(带环境背景的开阔视角)",
+                "intimate full-body view from close distance(近距离私密全身视角)",
+                "standard full-body view with natural perspective(自然透视的标准全身视角)",
+                "pulled-back view showing scale relationship(展示比例关系的远视角)",
+                "compressed view with telephoto perspective(长焦压缩效果的视角)",
+                "wide-angle view with dramatic perspective(戏剧性透视的广角视角)",
+                "full-body shot from low position with figure at 60% frame height(低位全身拍摄，人物占画面高度60%)"
             ]
         },
         "angle": {
@@ -270,19 +389,29 @@
                 "eye-level dutch angle from medium distance(中等距离的倾斜平视角度)",
                 "bird's eye view showing full scene(显示完整场景的鸟瞰视角)",
                 "slight low angle emphasizing environment(强调环境的略低角度)",
-                "natural eye-level from slight distance(略远处的自然平视)"
+                "natural eye-level from slight distance(略远处的自然平视)",
+                "upward angle from ground level(地平面仰角)",
+                "dramatic low angle from knee height(膝盖高度的戏剧性仰角)",
+                "heroic low angle from waist level(腰部高度的英雄式仰角)",
+                "dynamic upward angle emphasizing height(强调高度的动态仰角)",
+                "low angle with slight tilt for dramatic effect(带轻微倾斜的低角度以增加戏剧效果)"
             ]
         },
         "focus": {
-            "default": "balanced focus between subject and environment(人物与环境的平衡对焦)",
+            "default": "deep focus with sharp details from foreground to background(前景到背景都清晰的深焦)",
             "choices": [
                 "none(无)",
-                "balanced focus between subject and environment(人物与环境的平衡对焦)",
-                "deep focus showing clear environment(显示清晰环境的深焦)",
-                "soft focus on whole scene(整个场景的柔焦)",
-                "selective focus prioritizing environment(优先环境的选择性对焦)",
-                "cinematic focus with deep depth of field(深景深的电影感对焦)",
-                "atmospheric soft focus throughout(全场景氛围感柔焦)"
+                "deep focus with sharp details from foreground to background(前景到背景都清晰的深焦)",
+                "ultra sharp focus throughout entire frame(整个画面超清晰对焦)",
+                "cinematic deep focus with crystal clear environment(电影感深焦，环境清晰可见)",
+                "balanced focus with crisp details in all planes(所有层面都清晰细节的平衡对焦)",
+                "high clarity focus from subject to distant background(从主体到远景都高清晰度的对焦)",
+                "maximum depth of field with sharp environmental details(最大景深，环境细节清晰)",
+                "architectural focus with precise environmental details(建筑摄影式对焦，环境细节精准)",
+                "landscape focus emphasizing scenic clarity(风光摄影对焦，强调场景清晰度)",
+                "documentary style focus with full scene clarity(纪实风格对焦，全场景清晰)",
+                "technical focus with uniform sharpness(技术性对焦，统一锐度)",
+                "f/16 deep focus for maximum detail retention(f/16光圈深焦，保持最大细节)"
             ]
         },
         "style": {
@@ -308,6 +437,13 @@
                 "fine art style with painterly quality(艺术摄影风格，绘画质感)",
                 "vintage retro style with nostalgic tones(复古风格，怀旧色调)",
                 "artistic portrait style with emotional depth(艺术人像风格，情感深度)"
+            ]
+        },
+        "quality": {
+            "default": "masterpiece, best quality, highly detailed, ultra-realistic, professional photography, 8k uhd(杰作，最佳质量，高度细节，超写实，专业摄影，8K超高清)",
+            "choices": [
+                "none(无)",
+                "masterpiece, best quality, highly detailed, ultra-realistic, professional photography, 8k uhd(杰作，最佳质量，高度细节，超写实，专业摄影，8K超高清)"
             ]
         }
     }

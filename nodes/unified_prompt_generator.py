@@ -50,6 +50,8 @@ class UnifiedPromptGeneratorNode:
             
         # Appearance
         appearance_parts = []
+        if clean_kwargs['age_gender'] and clean_kwargs['age_gender'] != 'none':
+            appearance_parts.append(clean_kwargs['age_gender'])
         if clean_kwargs['race']:
             appearance_parts.append(clean_kwargs['race'])
         if clean_kwargs['skin']:
@@ -60,13 +62,29 @@ class UnifiedPromptGeneratorNode:
             appearance_parts.append(clean_kwargs['eyes'])
         if clean_kwargs['lips']:
             appearance_parts.append(clean_kwargs['lips'])
-        appearance = f"A young {', '.join(appearance_parts)} person" if appearance_parts else ""
+        appearance = f"A {', '.join(appearance_parts)}" if appearance_parts else ""
+
+        # Update pronouns based on gender
+        gender = clean_kwargs.get('age_gender', '').lower()
+        if 'male' in gender or 'boy' in gender or 'man' in gender:
+            pronoun = 'He'
+        else:
+            pronoun = 'She'  # Default to female pronouns
 
         # Body
         body_parts = []
         if clean_kwargs['body'] and clean_kwargs['body'] != 'none':
-            body_parts.append(clean_kwargs['body'])
-        body = f"She has {', '.join(body_parts)}" if body_parts else ""
+            # Split body description
+            body_parts = clean_kwargs['body'].split(': ', 1)
+            if len(body_parts) > 1:
+                # Use the detailed description after the colon
+                body_type, description = body_parts
+                body = f"{pronoun} has {description}"
+            else:
+                # If no colon found, use the entire string
+                body = f"{pronoun} has {clean_kwargs['body']}"
+        else:
+            body = ""
 
         # OOTD (Outfit of the Day)
         outfit_parts = []
@@ -76,29 +94,54 @@ class UnifiedPromptGeneratorNode:
             outfit_parts.append(clean_kwargs['bottom'])
         if clean_kwargs['shoes'] and clean_kwargs['shoes'] != 'none':
             outfit_parts.append(clean_kwargs['shoes'])
-        clothing = f"She is wearing {', '.join(outfit_parts)}" if outfit_parts else ""
+        if clean_kwargs['hat'] and clean_kwargs['hat'] != 'none':
+            outfit_parts.append(clean_kwargs['hat'])
+        if clean_kwargs['jewelry'] and clean_kwargs['jewelry'] != 'none':
+            outfit_parts.append(clean_kwargs['jewelry'])
+        if clean_kwargs['glasses'] and clean_kwargs['glasses'] != 'none':
+            outfit_parts.append(clean_kwargs['glasses'])
+        if clean_kwargs['handbag'] and clean_kwargs['handbag'] != 'none':
+            outfit_parts.append(clean_kwargs['handbag'])
+        clothing = f"{pronoun} is wearing {', '.join(outfit_parts)}" if outfit_parts else ""
 
         # Pose and Expression
         pose_desc = ""
         pose = clean_kwargs['pose']
         expression = clean_kwargs['expression']
-        if pose and expression and pose != 'none' and expression != 'none':
-            pose_desc = f"She is {pose} and has a {expression}"
-        elif pose and pose != 'none':
-            pose_desc = f"She is {pose}"
-        elif expression and expression != 'none':
-            pose_desc = f"She has a {expression}"
+
+        if pose and pose != 'none':
+            # Split category and description
+            pose_parts = pose.split(': ', 1)
+            if len(pose_parts) > 1:
+                category_name, description = pose_parts
+                # Remove category prefix (e.g., "standing.contrapposto")
+                category_name = category_name.split('.')[-1]
+                pose_desc = f"{pronoun} is {description}"
+            else:
+                pose_desc = f"{pronoun} is {pose}"
+
+        if expression and expression != 'none':
+            if pose_desc:
+                pose_desc += f" and has a {expression}"
+            else:
+                pose_desc = f"{pronoun} has a {expression}"
 
         # Environment
         environment = ""
-        scene = clean_kwargs['scene']
-        lighting = clean_kwargs['lighting']
-        if scene and lighting and scene != 'none' and lighting != 'none':
-            environment = f"The image is set in {scene}. The lighting is {lighting}"
-        elif scene and scene != 'none':
-            environment = f"The image is set in {scene}"
-        elif lighting and lighting != 'none':
-            environment = f"The lighting is {lighting}"
+        scene_preset = clean_kwargs['scene_preset']
+        
+        if scene_preset and scene_preset != 'none':
+            # Split category and description
+            scene_parts = scene_preset.split(': ', 1)
+            if len(scene_parts) > 1:
+                category_name, descriptions = scene_parts
+                # Split scene and lighting descriptions
+                scene, lighting = descriptions.split(', ', 1)
+                # Remove category prefix (e.g., "commercial_spaces.mall_boutique")
+                category_name = category_name.split('.')[-1]
+                environment = f"The image is set in {scene}. The lighting is {lighting}"
+            else:
+                environment = f"The image is set in {scene_preset}"
 
         # Photography
         photography_parts = []
@@ -125,8 +168,13 @@ class UnifiedPromptGeneratorNode:
         
         photography = f"The image is {', '.join(photography_parts)}" if photography_parts else ""
 
+        # Quality
+        quality = ""
+        if clean_kwargs['quality'] and clean_kwargs['quality'] != 'none':
+            quality = clean_kwargs['quality']
+
         # Combine all sections into a final prompt
-        prompt_parts = [p for p in [appearance, body, clothing, pose_desc, environment, photography] if p]
+        prompt_parts = [p for p in [appearance, body, clothing, pose_desc, environment, photography, quality] if p]
 
         final_prompt = ". ".join(prompt_parts)
         return (final_prompt,)
