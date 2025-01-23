@@ -16,7 +16,7 @@
 6. **文件夹图片统计 (Image Count From Folder)**: 统计指定文件夹中的图片数量
 7. **文件夹加载图片 (Load Image From Folder)**: 从指定文件夹中批量加载图片，支持设置起始索引和加载数量
 8. **文件保存 (File Save)**: 将文本内容保存到指定文件夹，支持多种文件格式
-
+9. **动态表达式 (Dynamic Expression)**: 执行动态Python表达式，支持最多5个参数
 ### 集成的子模块
 
 以下是集成的常用节点，如果不需要所有节点，可单独下载：
@@ -517,3 +517,69 @@ git submodule update --remote
 - 文件名必须正确
 - 文本内容必须是标准格式
 - 如果文件夹不存在会输出错误信息
+
+### 🐟动态表达式 (Dynamic Expression)
+
+执行动态Python表达式，支持最多5个参数。
+
+- **表达式**：需要执行的Python表达式
+  - 支持标准Python表达式
+  - 可以从文本文件或其他节点输出中获取
+- **参数**：表达式需要的参数
+  - 支持任意类型
+  - 支持最多5个参数
+
+#### 输出
+
+- **结果**：表达式执行结果
+  - 输出类型：ANY
+  - 可以与其他节点对接
+
+#### 使用示例
+
+1. 执行简单的加法表达式：
+   ```
+   expression: "return arg1 + arg2"
+   arg1: 1
+   arg2: 2
+   ```
+   输出：3
+
+2. 执行复杂的字符串拼接表达式：
+   ```
+   expression: "return f'Hello, {arg1} {arg2}!'
+   arg1: "John"
+   arg2: "Doe"
+   ```
+   输出："Hello, John Doe!"
+
+3. 执行复杂的列表操作表达式：
+   ```
+   expression: "return [arg1, arg2, arg3]"
+   arg1: 1
+   arg2: 2
+   arg3: 3
+   ```
+   输出：[1, 2, 3]
+
+4. 执行复杂的字典操作表达式：
+   ```
+   expression: "return {'a': arg1, 'b': arg2, 'c': arg3}"
+   arg1: 1
+   arg2: 2
+   arg3: 3
+   ```
+   输出：{'a': 1, 'b': 2, 'c': 3}
+
+5. if-else表达式：
+   ```
+   expression: "return 'Even' if arg1 % 2 == 0 else 'Odd'"
+   arg1: 4
+   ```
+   输出："Even"
+
+#### 注意事项
+
+- 表达式必须是有效的Python代码
+- 参数必须与表达式中的变量名匹配
+- 表达式执行结果会作为输出返回

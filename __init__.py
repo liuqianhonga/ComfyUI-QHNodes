@@ -8,6 +8,7 @@ from .nodes.image_count_from_folder import ImageCountFromFolder
 from .nodes.load_image_from_folder import LoadImageFromFolder
 from .nodes.file_save import FileSave
 from .nodes.unified_prompt_generator import UnifiedPromptGeneratorNode
+from .nodes.dynamic_expression import DynamicExpressionNode
 from .submodules_loader import load_submodules
 from .requirements_installer import ensure_dependencies
 
@@ -24,6 +25,7 @@ ImageCountFromFolder.CATEGORY = "🐟QHNodes"
 LoadImageFromFolder.CATEGORY = "🐟QHNodes"
 FileSave.CATEGORY = "🐟QHNodes"
 UnifiedPromptGeneratorNode.CATEGORY = "🐟QHNodes"
+DynamicExpressionNode.CATEGORY = "🐟QHNodes"
 
 # Load submodules
 submodule_nodes, submodule_display_names = load_submodules(os.path.dirname(__file__))
@@ -39,6 +41,7 @@ NODE_CLASS_MAPPINGS = {
     "LoadImageFromFolder": LoadImageFromFolder,
     "FileSave": FileSave,
     "UnifiedPromptGenerator": UnifiedPromptGeneratorNode,
+    "DynamicExpression": DynamicExpressionNode,
     **submodule_nodes
 }
 
@@ -52,6 +55,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "LoadImageFromFolder": "🐟Load Image From Folder",
     "FileSave": "🐟File Save",
     "UnifiedPromptGenerator": "🐟Unified Prompt Generator",
+    "DynamicExpression": "🐟Dynamic Expression",
     **submodule_display_names
 }
 
