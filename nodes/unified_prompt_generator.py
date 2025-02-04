@@ -41,12 +41,30 @@ class UnifiedPromptGeneratorNode:
     FUNCTION = "generate_prompt"
     CATEGORY = "Prompt Generation"
 
+    def parse_choice(self, choice_str):
+        """Parse a choice string in format 'category.style: description(类别.风格：描述)'"""
+        if choice_str == "none(无)" or choice_str == "none" or not choice_str:
+            return ""
+            
+        # Extract English part using existing method
+        en_part = self.extract_english(choice_str)
+        
+        # Split category and description
+        if ': ' in en_part:
+            # Case with full description
+            category_style, description = en_part.split(': ', 1)
+            # Return only the description part
+            return description
+        else:
+            # Case without description, return the entire English part
+            return en_part
+
     def generate_prompt(self, **kwargs):
         if "message" in kwargs:
             return (kwargs["message"],)
         
-        # Extract English parts from all inputs
-        clean_kwargs = {k: self.extract_english(v) for k, v in kwargs.items()}
+        # Use parse_choice instead of extract_english
+        clean_kwargs = {k: self.parse_choice(v) for k, v in kwargs.items()}
             
         # Appearance
         appearance_parts = []
@@ -178,3 +196,4 @@ class UnifiedPromptGeneratorNode:
 
         final_prompt = ". ".join(prompt_parts)
         return (final_prompt,)
+

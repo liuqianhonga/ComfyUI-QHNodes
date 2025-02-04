@@ -4,124 +4,193 @@
             "default": "young adult female(年轻女性)",
             "choices": [
                 "none(无)",
-                "young adult female(年轻女性)",
-                "teenage girl(少女)",
-                "mature woman(成熟女性)",
-                "middle-aged woman(中年女性)",
-                "young adult male(年轻男性)",
-                "teenage boy(少年)",
-                "mature man(成熟男性)",
-                "middle-aged man(中年男性)",
-                "androgynous young adult(中性年轻人)"
+                "female.young: young adult female in early twenties(女性.年轻：二十出头的年轻女性)",
+                "female.teen: teenage girl with youthful features(女性.少女：青春活力的少女)",
+                "female.mature: mature woman in early thirties(女性.成熟：三十出头的成熟女性)",
+                "female.middle: middle-aged woman with elegant bearing(女性.中年：优雅气质的中年女性)",
+                
+                "male.young: young adult male in early twenties(男性.年轻：二十出头的年轻男性)",
+                "male.teen: teenage boy with youthful energy(男性.少年：朝气蓬勃的少年)",
+                "male.mature: mature man in early thirties(男性.成熟：三十出头的成熟男性)",
+                "male.middle: middle-aged man with distinguished presence(男性.中年：沉稳气质的中年男性)",
+                
+                "androgynous.young: androgynous young adult with fluid features(中性.年轻：特征流畅的年轻中性人)",
+                "androgynous.teen: androgynous teenager with subtle features(中性.少年：特征细微的中性少年)",
+                "androgynous.mature: androgynous adult with balanced features(中性.成熟：特征平衡的成熟中性人)"
             ]
         },
         "race": {
             "default": "east asian(东亚人)",
             "choices": [
-                "east asian(东亚人)",
-                "southeast asian(东南亚人)", 
-                "european(欧洲人)",
-                "middle eastern(中东人)",
-                "south asian(南亚人)",
-                "african(非洲人)",
-                "latin american(拉美人)",
-                "mixed east asian and european(东亚-欧洲混血)",
-                "mixed african and european(非洲-欧洲混血)"
+                "none(无)",
+                "asian.east: east asian(亚洲.东亚：东亚人)",
+                "asian.southeast: southeast asian(亚洲.东南亚：东南亚人)",
+                "asian.south: south asian(亚洲.南亚：南亚人)",
+                
+                "european.north: northern European(欧洲.北欧：北欧人)",
+                "european.south: southern European(欧洲.南欧：南欧人)",
+                "european.east: eastern European(欧洲.东欧：东欧人)",
+                
+                "african.north: north African(非洲.北非：北非人)",
+                "african.sub: sub-Saharan African(非洲.撒哈拉以南：撒哈拉以南非洲人)",
+                "african.east: east African(非洲.东非：东非人)",
+                
+                "mixed.eurasian: mixed east Asian and European(混血.亚欧：东亚和欧洲混血)",
+                "mixed.afroeuropean: mixed African and European(混血.非欧：非洲和欧洲混血)",
+                "mixed.latinx: mixed indigenous American and European(混血.拉美：美洲原住民和欧洲混血)"
             ]
         },
         "hair": {
             "default": "long straight black hair, middle-parted(黑色直长发，中分)",
             "choices": [
-                "long straight black hair, middle-parted(黑色直长发，中分)",
-                "shoulder-length layered brown hair with side bangs(棕色层次肩发，侧刘海)",
-                "pixie cut with platinum blonde highlights(铂金金发短精灵发型)",
-                "long wavy dark brown hair with caramel highlights(深棕色长卷发，焦糖挑染)",
-                "medium-length auburn hair with soft waves(赤褐色中长发，柔波)",
-                "sleek black bob with straight bangs(黑色齐肩直发，齐刘海)",
-                "long silver-gray hair with loose curls(银灰色长发，松散卷)",
-                "rose gold beach waves with dark roots(玫瑰金海浪卷，深色发根)",
-                "short asymmetrical cut with purple highlights(紫色挑染不对称短发)",
-                "long braided black hair with red undertones(黑色编发，红色底色)",
-                "messy bun with face-framing tendrils(凌乱丸子头，碎发修饰)",
-                "high ponytail with sleek straight hair(光滑直发高马尾)",
-                "medium-length tousled copper hair(蓬松铜色中长发)",
-                "long black hair with subtle blue highlights(黑色长发，淡蓝色挑染)",
-                "short curly pastel pink hair(粉色短卷发)",
-                "waist-length silver white hair with gentle waves(银白色及腰波浪发)",
-                "chin-length blunt cut with emerald green color(祖母绿齐下巴直切发)",
-                "long layered dark purple hair with side sweep(深紫色长层次侧分发)",
-                "medium-length chocolate brown hair with curtain bangs(巧克力色中长发，窗帘刘海)",
-                "short spiky platinum blonde hair(铂金色短刺猬发)",
-                "long straight blonde hair, middle-parted(金色直长发，中分)",
-                "short curly brown hair(棕色短卷发)",
-                "wavy brown hair, side-parted(棕色波浪发，侧分)"
+                "none(无)",
+                "straight.long: long straight black hair with middle part(直发.长发：黑色直长发，中分)",
+                "straight.medium: shoulder-length straight brown hair with side part(直发.中长：棕色肩长直发，侧分)",
+                "straight.bob: sleek black bob with straight bangs(直发.短发：黑色齐肩直发，齐刘海)",
+                "straight.pixie: platinum blonde pixie cut with side-swept bangs(直发.精灵：铂金金色精灵短发，侧扫刘海)",
+                "straight.layered: long layered dark hair with face-framing pieces(直发.层次：黑色长层次直发，脸部修饰层)",
+                
+                "wavy.long: long wavy dark brown hair with caramel highlights(卷发.长发：深棕色长卷发，焦糖挑染)",
+                "wavy.medium: medium-length auburn waves with soft layers(卷发.中长：赤褐色中长波浪卷，柔和层次)",
+                "wavy.beach: rose gold beach waves with dark roots(卷发.海浪：玫瑰金海浪卷，深色发根)",
+                "wavy.natural: natural wavy brown hair with subtle highlights(卷发.自然：自然棕色波浪卷，淡淡挑染)",
+                "wavy.romantic: long romantic waves with golden highlights(卷发.浪漫：金色挑染浪漫长卷)",
+                
+                "curly.long: long spiral curls in chocolate brown(卷曲.长发：巧克力色长螺旋卷)",
+                "curly.medium: shoulder-length bouncy curls in auburn(卷曲.中长：赤褐色肩长弹性卷)",
+                "curly.short: short curly hair in natural black(卷曲.短发：自然黑色短卷发)",
+                "curly.afro: well-defined afro curls in dark brown(卷曲.爆炸：深棕色立体爆炸卷)",
+                "curly.coily: tight coily curls with defined pattern(卷曲.螺旋：紧致有型螺旋卷)",
+                
+                "updo.bun: sleek high bun with face-framing tendrils(盘发.丸子：光滑高丸子头，碎发修饰)",
+                "updo.messy: messy top knot with loose pieces(盘发.凌乱：凌乱高髻，零散发丝)",
+                "updo.braided: crown braid updo with intricate details(盘发.编发：皇冠编发盘发，精致细节)",
+                "updo.twist: elegant twisted updo with smooth finish(盘发.扭转：优雅扭转盘发，光滑质感)",
+                "updo.chignon: classic low chignon with side part(盘发.低髻：经典侧分低髻)",
+                
+                "colored.pastel: pastel pink long layers with white highlights(染发.粉彩：粉色长层次，白色挑染)",
+                "colored.vivid: vibrant purple mid-length with dark roots(染发.鲜艳：亮紫色中长发，深色发根)",
+                "colored.ombre: dark to silver ombre with smooth transition(染发.渐变：黑色到银色渐变，平滑过渡)",
+                "colored.highlight: caramel highlighted brown base(染发.挑染：焦糖挑染棕色底色)",
+                "colored.fantasy: multi-colored fantasy hair with pastel blend(染发.奇幻：多彩混合粉彩色)",
+                
+                "traditional.hanfu: classical Chinese historical hairstyle with ornate pins(传统.汉服：中国古典发型，华丽发钗)",
+                "traditional.kimono: Japanese shimada mage with kanzashi ornaments(传统.和服：日式岛田髷，簪子装饰)",
+                "traditional.hanbok: Korean historical braided style with binyeo(传统.韩服：韩式传统编发，发簪装饰)",
+                "traditional.indian: Indian classical braid with jasmine flowers(传统.印度：印度经典长辫，茉莉花饰)",
+                "traditional.thai: Thai traditional pinned-up style with gold ornaments(传统.泰国：泰国传统盘发，金饰装点)"
             ]
         },
         "skin": {
             "default": "fair skin with rosy undertones(白皙肤色带玫瑰底色)",
             "choices": [
                 "none(无)",
-                "fair skin with rosy undertones(白皙肤色带玫瑰底色)",
-                "porcelain skin with subtle pink flush(瓷白肌肤带淡淡粉红)",
-                "ivory skin with warm golden undertones(象牙白肤色带温暖金调)",
-                "light skin with peach undertones(浅色肌肤带桃色底色)",
-                "cream skin with natural glow(奶油色肌肤带自然光泽)",
+                "fair.rosy: fair skin with rosy undertones and natural flush(白皙.玫瑰：白皙肤色带玫瑰底色和自然红润)",
+                "fair.porcelain: porcelain skin with subtle pink undertones(白皙.瓷白：瓷白肌肤带淡淡粉红底色)",
+                "fair.ivory: ivory skin with warm golden undertones(白皙.象牙：象牙白肤色带温暖金调)",
+                "fair.peach: light skin with peachy undertones(白皙.桃色：浅色肌肤带桃色底色)",
+                "fair.cream: cream skin with natural luminosity(白皙.奶油：奶油色肌肤带自然光泽)",
                 
-                "medium skin with honey undertones(中等肤色带蜜糖底色)",
-                "olive skin with warm undertones(橄榄色肤色带温暖底色)",
-                "tan skin with golden highlights(小麦色肤色带金色光泽)",
-                "caramel skin with warm glow(焦糖色肤色带温暖光泽)",
-                "bronze skin with sun-kissed glow(古铜色肤色带阳光光泽)",
+                "medium.honey: medium skin with honey undertones(中等.蜜糖：中等肤色带蜜糖底色)",
+                "medium.olive: olive skin with warm Mediterranean undertones(中等.橄榄：橄榄色肤色带地中海暖调)",
+                "medium.golden: tan skin with golden highlights(中等.金色：小麦色肤色带金色光泽)",
+                "medium.caramel: caramel skin with warm glow(中等.焦糖：焦糖色肤色带温暖光泽)",
+                "medium.bronze: bronze skin with sun-kissed radiance(中等.古铜：古铜色肤色带阳光辉映)",
                 
-                "deep brown skin with rich undertones(深棕色肤色带丰富底色)",
-                "rich mahogany skin with warm glow(红木色肤色带温暖光泽)",
-                "ebony skin with radiant sheen(乌木色肤色带光泽)",
-                "dark skin with golden undertones(深色肤色带金色底色)",
+                "deep.brown: deep brown skin with rich undertones(深色.棕褐：深棕色肤色带丰富底色)",
+                "deep.mahogany: rich mahogany skin with warm glow(深色.红木：红木色肤色带温暖光泽)",
+                "deep.ebony: ebony skin with radiant sheen(深色.乌木：乌木色肤色带光泽)",
+                "deep.cocoa: dark cocoa skin with golden undertones(深色.可可：深色可可肤色带金色底色)",
+                "deep.espresso: deep espresso skin with luminous finish(深色.浓咖：深色浓咖肤色带光泽)",
                 
-                "flawless skin with dewy finish(无瑕肌肤带露珠光泽)",
-                "smooth skin with matte finish(光滑肌肤带哑光质地)",
-                "glowing skin with pearl sheen(发光肌肤带珍珠光泽)",
-                "luminous skin with glass-like finish(透亮肌肤带玻璃光泽)",
-                "radiant skin with healthy flush(容光焕发的肌肤带健康红润)",
-                "silky skin with natural luminosity(丝滑肌肤带自然光泽)"
+                "finish.dewy: flawless skin with dewy glass-like finish(质地.水光：无瑕肌肤带水润玻璃光泽)",
+                "finish.matte: smooth skin with natural matte finish(质地.哑光：光滑肌肤带自然哑光质地)",
+                "finish.pearl: glowing skin with pearl-like sheen(质地.珍珠：发光肌肤带珍珠光泽)",
+                "finish.glass: luminous skin with glass-skin effect(质地.玻璃：透亮肌肤带玻璃肌效果)",
+                "finish.velvet: radiant skin with velvet-like texture(质地.丝绒：容光焕发的肌肤带丝绒质地)",
+                
+                "glow.natural: silky skin with natural healthy glow(光泽.自然：丝滑肌肤带自然健康光泽)",
+                "glow.sun: warm skin with sun-kissed brilliance(光泽.阳光：温暖肌肤带阳光亲吻光泽)",
+                "glow.inner: clear skin with inner radiant glow(光泽.内发光：清透肌肤带内在光泽)",
+                "glow.ethereal: ethereal skin with otherworldly luminescence(光泽.空灵：空灵肌肤带超凡光泽)",
+                "glow.goddess: divine skin with goddess-like radiance(光泽.女神：神圣肌肤带女神光泽)"
             ]
         },
         "eyes": {
             "default": "almond-shaped eyes(杏仁眼)",
             "choices": [
-                "almond-shaped eyes(杏仁眼)",
-                "round eyes(圆眼)",
-                "narrow eyes(细长眼)"
+                "none(无)",
+                "shape.almond: classic almond-shaped eyes with gentle upward tilt(形状.杏仁：经典杏仁形状，温和上扬)",
+                "shape.round: large round eyes with bright expression(形状.圆形：明亮有神的大圆眼)",
+                "shape.narrow: elegant narrow eyes with subtle lift(形状.细长：优雅细长眼型，微微上扬)",
+                
+                "asian.monolid: East Asian monolid eyes with subtle crease(亚洲.单眼皮：东亚单眼皮，细微褶皱)",
+                "asian.double: East Asian double-lid eyes with defined crease(亚洲.双眼皮：东亚双眼皮，清晰褶皱)",
+                "asian.hooded: East Asian hooded eyes with soft fold(亚洲.内双：东亚内双眼，柔和褶皱)",
+                
+                "european.deep: deep-set European eyes with prominent brow(欧洲.深眼窝：欧式深眼窝，突出眉骨)",
+                "european.wide: wide-set European eyes with open gaze(欧洲.宽距：欧式宽距眼型，开阔眼神)",
+                "european.upturned: upturned European eyes with lifted outer corners(欧洲.上扬：欧式上扬眼型，外眼角上翘)",
+                
+                "special.phoenix: phoenix eyes with dramatic upward sweep(特殊.凤眼：戏剧性上扬的凤眼)",
+                "special.doe: large doe eyes with innocent expression(特殊.鹿眼：天真无邪的大鹿眼)",
+                "special.feline: cat-like eyes with exotic tilt(特殊.猫眼：异域风情的猫眼)"
             ]
         },
         "lips": {
             "default": "light pink lips(浅粉色嘴唇)",
             "choices": [
-                "light pink lips(浅粉色嘴唇)",
-                "full red lips(红色丰满嘴唇)",
-                "thin lips(薄嘴唇)"
+                "none(无)",
+                "shape.full: full plump lips with defined cupid's bow(形状.丰满：丰满饱满，清晰丘比特之弓)",
+                "shape.thin: elegant thin lips with subtle curves(形状.纤薄：优雅纤薄，微妙曲线)",
+                "shape.heart: heart-shaped lips with pronounced peaks(形状.心形：心形唇峰，突出唇尖)",
+                
+                "color.pink: natural light pink lips with rosy tint(颜色.粉色：自然浅粉，玫瑰色调)",
+                "color.red: rich red lips with glossy finish(颜色.红色：丰富红色，光泽质感)",
+                "color.coral: warm coral lips with peachy undertone(颜色.珊瑚：温暖珊瑚，桃色底调)",
+                
+                "texture.glossy: glossy lips with dewy shine(质地.光泽：水润光泽，晶莹剔透)",
+                "texture.matte: matte lips with velvet finish(质地.哑光：丝绒质地，哑光效果)",
+                "texture.natural: natural lips with subtle sheen(质地.自然：自然光泽，细腻光感)",
+                
+                "style.gradient: Korean gradient lips with darker center(风格.渐变：韩式渐变，中心加深)",
+                "style.defined: precisely defined lips with sharp outline(风格.轮廓：精确轮廓，清晰描边)",
+                "style.blotted: softly blotted lips with diffused edges(风格.晕染：柔和晕染，模糊边缘)"
             ]
         },
         "body": {
-            "default": "perfect hourglass figure: slim waist with full bust and hips in ideal proportion, smooth curves flowing naturally, long elegant neck(完美沙漏身材：纤细腰身配合丰满上围和臀部的理想比例，曲线自然流畅，优雅修长颈部)",
+            "default": "perfect hourglass figure: slim waist with full bust and hips in ideal proportion(完美沙漏身材：纤细腰身配合丰满上围和臀部的理想比例)",
             "choices": [
                 "none(无)",
-                "perfect hourglass figure: slim waist with full bust and hips in ideal proportion, smooth curves flowing naturally, long elegant neck(完美沙漏身材：纤细腰身配合丰满上围和臀部的理想比例，曲线自然流畅，优雅修长颈部)",
-                "curvy hourglass: voluptuous figure with prominent bust, tiny waist and full hips, soft feminine curves throughout body(丰满沙漏：丰满上围，纤细腰身和丰满臀部，全身柔美曲线)",
-                "athletic hourglass: toned figure with defined waist, athletic bust and sculpted hips, lean muscle definition(运动沙漏：紧致身材，收腰，运动感上围和雕塑感臀部，匀称肌肉线条)",
-                "slim model figure: tall and slender build with long limbs, elegant proportions, subtle natural curves(纤细模特身材：高挑苗条，四肢修长，优雅比例，自然柔和曲线)",
-                "petite slim: delicate small frame with fine bone structure, small bust and slim hips, graceful proportions(娇小纤细：精致小巧骨架，娇小上围和纤细臀部，优雅比例)",
-                "willowy figure: tall and reed-slim with long legs, straight elegant lines, subtle curves(柳条身材：高挑纤细，长腿，优雅直线条，细微曲线)",
-                "fit athletic: well-toned body with defined muscles, medium bust and firm curves, strong yet feminine silhouette(健身运动型：良好肌肉线条，中等上围和紧致曲线，强韧中带女性美)",
-                "lean athletic: slender muscular build with small firm bust, defined abs, long toned legs(精瘦运动型：纤细肌肉型，小巧紧致上围，腹肌线条，修长紧致双腿)",
-                "sporty balanced: athletic build with proportional bust, toned waist and strong legs, harmonious muscle definition(均衡运动型：运动体格，匀称上围，紧致腰身和强健双腿，和谐肌肉线条)",
-                "balanced natural: medium build with harmonious proportions, natural bust size, smooth flowing lines(自然均衡型：中等体格，和谐比例，自然上围，流畅线条)",
-                "proportional curvy: evenly distributed curves with medium-full bust, defined waist, rounded hips(均衡曲线型：均匀分布曲线，中等丰满上围，明显腰身，圆润臀部)",
-                "classic balanced: well-proportioned figure with moderate curves, medium bust and hips in harmony(经典均衡型：良好比例，适中曲线，中等上围和臀部和谐)",
-                "long-legged: exceptionally long legs with slim ankles, proportional upper body, elegant height(长腿型：特长双腿，纤细脚踝，匀称上半身，优雅身高)",
-                "small-waisted: dramatically small waist with proportional bust and hips, defined waistline(细腰型：显著纤细腰身，匀称上围和臀部，明显腰线)",
-                "full-busted: generous bust with slim waist and proportional hips, feminine silhouette(丰满上围：丰满胸部，纤细腰身和匀称臀部，女性化轮廓)",
-                "toned-slim: lean figure with subtle muscle definition, small firm bust, long limbs(紧致纤细：精瘦身材，细微肌肉线条，小巧紧实上围，修长四肢)"
+                "hourglass.perfect: slim waist with full bust and hips in ideal proportion(沙漏.完美：纤细腰身配合丰满上围和臀部的理想比例)",
+                "hourglass.curvy: voluptuous figure with prominent bust, tiny waist and full hips(沙漏.丰满：丰满上围，纤细腰身和丰满臀部)",
+                "hourglass.athletic: toned figure with defined waist, athletic bust and sculpted hips(沙漏.运动：紧致身材，收腰，运动感上围和雕塑感臀部)",
+                "hourglass.slim: slender hourglass with subtle curves and balanced proportions(沙漏.纤细：纤细沙漏体型，柔和曲线和平衡比例)",
+                "hourglass.petite: delicate hourglass with small frame and dainty features(沙漏.娇小：精致小巧沙漏体型，娇小特征)",
+                
+                "model.tall: tall and slender build with long limbs and elegant proportions(模特.高挑：高挑苗条，四肢修长，优雅比例)",
+                "model.runway: willowy figure with long legs and subtle curves(模特.秀场：柳条身材，长腿，细微曲线)",
+                "model.editorial: statuesque figure with dramatic proportions(模特.大片：雕塑般身材，戏剧性比例)",
+                "model.commercial: balanced model figure with natural curves(模特.商业：平衡的模特身材，自然曲线)",
+                "model.petite: delicate model frame with refined features(模特.娇小：精致娇小的模特体型，精细特征)",
+                
+                "athletic.fit: well-toned body with defined muscles and firm curves(运动.健身：良好肌肉线条，紧致曲线)",
+                "athletic.lean: slender muscular build with long toned legs(运动.精瘦：纤细肌肉型，修长紧致双腿)",
+                "athletic.sporty: athletic build with proportional features and strong legs(运动.运动：运动体格，匀称特征和强健双腿)",
+                "athletic.dancer: graceful athletic form with elegant muscle tone(运动.舞者：优雅运动体态，优美肌肉线条)",
+                "athletic.yoga: flexible athletic build with balanced muscle definition(运动.瑜伽：柔韧运动体型，平衡肌肉线条)",
+                
+                "balanced.natural: medium build with harmonious proportions(均衡.自然：中等体格，和谐比例)",
+                "balanced.curvy: evenly distributed curves with medium-full features(均衡.曲线：均匀分布曲线，中等丰满特征)",
+                "balanced.classic: well-proportioned figure with moderate curves(均衡.经典：良好比例，适中曲线)",
+                "balanced.slim: proportional slim build with gentle curves(均衡.纤细：匀称纤细体型，温和曲线)",
+                "balanced.petite: small balanced frame with delicate features(均衡.娇小：小巧均衡体型，精致特征)",
+                
+                "feature.long_legs: exceptionally long legs with slim ankles(特征.长腿：特长双腿，纤细脚踝)",
+                "feature.small_waist: dramatically small waist with proportional features(特征.细腰：显著纤细腰身，匀称特征)",
+                "feature.toned_arms: sculpted arms with elegant muscle definition(特征.紧致手臂：雕塑感手臂，优雅肌肉线条)",
+                "feature.elegant_neck: long graceful neck with refined posture(特征.优雅颈部：修长优雅颈部，精致姿态)",
+                "feature.defined_collarbones: prominent collarbones with elegant structure(特征.锁骨：突出锁骨，优雅结构)"
             ]
         }
     },
@@ -130,137 +199,328 @@
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "white cropped t-shirt with pink trim(白色露脐T恤，粉色边饰)",
-                "oversized beige Burberry sweater(Burberry米色宽松毛衣)",
-                "black leather jacket over white crop top(黑色皮夹克配白色露脐上衣)",
-                "pastel pink Chanel tweed blazer with white tank top(香奈儿粉色花呢外套配白色背心)",
-                "cozy Acne Studios knit turtleneck sweater(Acne Studios舒适高领毛衣)",
-                "silk emerald green Gucci blouse(古驰祖母绿丝绸衬衫)",
-                "black turtleneck(黑色高领)",
-                "white off-shoulder top(白色一字肩上衣)",
-                "purple tie-dye hoodie(紫色扎染卫衣)",
-                "white fitted top(白色修身上衣)",
-                "grey hoodie(灰色连帽卫衣)",
-                "white lace top(白色蕾丝上衣)"
+                "basic.plain_tee: plain white cotton t-shirt with round neck(基础.纯色T恤：白色圆领纯棉T恤)",
+                "basic.fitted_tee: black fitted crew neck t-shirt(基础.修身T恤：黑色修身圆领T恤)",
+                "basic.graphic_tee: oversized graphic print t-shirt(基础.图案T恤：宽松图案印花T恤)",
+                "basic.long_sleeve: striped long sleeve t-shirt(基础.长袖：条纹长袖T恤)",
+                "basic.v_neck: basic v-neck tee in pastel colors(基础.V领：粉色系V领基础款T恤)",
+                
+                "tank.silk_cami: silk camisole with lace trim(吊带.真丝：蕾丝边真丝吊带)",
+                "tank.crop: ribbed crop tank top(吊带.短款：罗纹短款背心)",
+                "tank.spaghetti: fitted spaghetti strap top(吊带.细带：修身细肩带上衣)",
+                "tank.halter: halter neck crop top(吊带.挂脖：挂脖露脐上衣)",
+                "tank.athletic: racerback athletic tank(吊带.运动：运动背心)",
+                
+                "blouse.button_up: white cotton button-up shirt(衬衫.基础：白色棉质衬衫)",
+                "blouse.bow: silk pussy bow blouse(衬衫.蝴蝶结：丝质蝴蝶结衬衫)",
+                "blouse.chiffon: ruffled sleeve chiffon blouse(衬衫.雪纺：荷叶袖雪纺衫)",
+                "blouse.crop: cropped white shirt with collar(衬衫.短款：白色短款翻领衬衫)",
+                "blouse.oxford: oversized oxford shirt(衬衫.牛津：宽松牛津衬衫)",
+                
+                "sweater.turtleneck: cashmere turtleneck sweater(毛衣.高领：羊绒高领毛衣)",
+                "sweater.cardigan: chunky cable knit cardigan(毛衣.开衫：粗针织开衫)",
+                "sweater.crop: cropped fuzzy sweater(毛衣.短款：短款毛绒毛衣)",
+                "sweater.pullover: v-neck lightweight pullover(毛衣.套头：轻薄V领套头衫)",
+                "sweater.ribbed: ribbed knit crop top(毛衣.罗纹：罗纹针织短款上衣)",
+                
+                "uniform.sailor: white sailor collar school uniform top(制服.水手服：白色水手领校服上衣)",
+                "uniform.blazer: navy blue blazer with school emblem(制服.西装：藏青色校徽西装外套)",
+                "uniform.peter_pan: peter pan collar uniform blouse(制服.娃娃领：娃娃领制服衬衫)",
+                "uniform.seifuku: traditional seifuku top with red scarf(制服.制服：红领巾传统制服上衣)",
+                "uniform.vest: preppy style uniform sweater vest(制服.背心：学院风制服毛衣背心)",
+                "uniform.jk: classic Japanese high school uniform blazer with ribbon(制服.日系：经典日系高中制服西装外套配蝴蝶结)",
+                "uniform.sailor_summer: white short-sleeve sailor top with navy collar(制服.水手夏季：白色短袖水手服上衣配海军领)",
+                "uniform.sailor_winter: long-sleeve navy sailor top with white trim(制服.水手冬季：藏青色长袖水手服上衣配白边)",
+                "uniform.chinese: traditional Chinese school uniform jacket with mandarin collar(制服.中式：传统中式立领校服外套)",
+                "uniform.british: British style school blazer with embroidered badge(制服.英式：英式校服西装外套配刺绣校徽)",
+                "uniform.korean: Korean school uniform cardigan with bow tie(制服.韩式：韩式校服开衫配蝴蝶结)",
+                "uniform.gakuran: traditional Japanese male school uniform top(制服.学兰：传统日式男校制服上衣)",
+                "uniform.vest_set: preppy sweater vest over white shirt with tie(制服.马甲套装：学院风毛衣背心配白衬衫和领带)",
+                
+                "designer.chanel: Chanel tweed cropped jacket(设计师.香奈儿：花呢短外套)",
+                "designer.dior: Dior silk logo print top(设计师.迪奥：丝质logo印花上衣)",
+                "designer.gucci: Gucci GG monogram knit sweater(设计师.古驰：GG标志针织毛衣)",
+                "designer.lv: Louis Vuitton monogram denim jacket(设计师.路易威登：老花牛仔外套)",
+                "designer.prada: Prada nylon gabardine top(设计师.普拉达：尼龙华达呢上衣)",
+                
+                "casual.nike: Nike Dri-FIT crop top(休闲.耐克：速干短款上衣)",
+                "casual.uniqlo: Uniqlo U crew neck t-shirt(休闲.优衣库：U系列圆领T恤)",
+                "casual.zara: Zara oversized blazer(休闲.Zara：宽松西装外套)",
+                "casual.hm: H&M ribbed tank top(休闲.H&M：罗纹背心)",
+                "casual.muji: MUJI cotton basic tee(休闲.无印良品：棉质基础T恤)",
+                
+                "statement.off_shoulder: off-shoulder ruched crop top(特色.一字肩：褶皱短款上衣)",
+                "statement.mesh: mesh long sleeve top with floral print(特色.网纱：花卉印花网纱长袖上衣)",
+                "statement.cutout: asymmetric cut-out blouse(特色.镂空：不对称镂空衬衫)",
+                "statement.sequin: sequined party crop top(特色.亮片：亮片派对短款上衣)",
+                "statement.lace: transparent lace overlay top(特色.蕾丝：透明蕾丝罩衫)",
+
+                "hanfu.ruqun_top: elegant Ming dynasty style ruqun top with wide sleeves(汉服.襦裙上衣：明制襦裙上衣，阔袖)",
+                "hanfu.beizi: flowing Song dynasty beizi jacket with embroidered clouds(汉服.褙子：宋制飘逸褙子，云纹绣花)",
+                "hanfu.daxiushan: Tang dynasty wide-sleeved upper garment with gold trim(汉服.大袖衫：唐制阔袖上衣，金边装饰)",
+                "hanfu.mianfu: formal Han dynasty court dress top with ranked embroidery(汉服.冕服：汉制朝服上衣，品级绣纹)",
+                "hanfu.aoqun_top: Qing dynasty ao with traditional frog buttons(汉服.袄裙上衣：清制盘扣袄)",
+
+                "kimono.furisode: formal furisode kimono with long flowing sleeves(和服.振袖：正式振袖和服，飘逸长袖)",
+                "kimono.yukata: casual summer yukata with nature motifs(和服.浴衣：夏季休闲浴衣，自然图案)",
+                "kimono.haori: traditional haori jacket over kimono(和服.羽织：传统羽织外套)",
+
+                "hanbok.jeogori: Korean hanbok jacket with rainbow striped sleeves(韩服.上衣：韩服上衣，彩虹条纹袖)",
+                "hanbok.dangui: formal Korean court dangui jacket(韩服.当衣：韩国宫廷当衣)",
+
+                "qipao.classic: Shanghai-style fitted qipao top with mandarin collar(旗袍.经典：上海风格修身旗袍上衣，立领)",
+                "qipao.modern: contemporary sleeveless qipao top with side slits(旗袍.现代：现代无袖旗袍上衣，开衩)"
             ]
         },
         "bottom": {
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "high-waisted pink shorts(高腰粉色短裤)",
-                "Levi's blue ripped jeans(Levi's蓝色破洞牛仔裤)",
-                "high-waisted black Acne Studios skinny jeans(Acne Studios高腰黑色紧身牛仔裤)",
-                "white Stella McCartney wide-leg pants(Stella McCartney白色阔腿裤)",
-                "red plaid Vivienne Westwood mini skirt(Vivienne Westwood红色格子短裙)",
-                "light blue mom jeans(浅蓝色妈妈牛仔裤)",
-                "black leggings(黑色打底裤)",
-                "mint green tennis skirt(薄荷绿网球裙)",
-                "pink tulle midi skirt(粉色网纱中长裙)",
-                "black leather pants(黑色皮裤)",
-                "pleated grey skirt(灰色百褶裙)",
-                "high-waisted cargo pants(高腰工装裤)"
+                "jeans.levis: classic blue Levi's 501 straight leg jeans(牛仔裤.李维斯：经典蓝色501直筒牛仔裤)",
+                "jeans.acne: high-waisted black Acne Studios skinny jeans(牛仔裤.Acne：高腰黑色紧身牛仔裤)",
+                "jeans.citizens: Citizens of Humanity light wash ripped boyfriend jeans(牛仔裤.COH：浅色水洗破洞男友牛仔裤)",
+                "jeans.agolde: AGOLDE 90s loose fit mid-rise jeans(牛仔裤.AGOLDE：90年代中腰宽松牛仔裤)",
+                "jeans.frame: FRAME Le High Flare indigo jeans(牛仔裤.FRAME：Le High系列靛蓝喇叭牛仔裤)",
+                
+                "pants.stella: white Stella McCartney tailored wide-leg pants(长裤.丝黛拉：白色量身定制阔腿裤)",
+                "pants.celine: Celine high-waisted wool straight pants(长裤.赛琳：高腰羊毛直筒裤)",
+                "pants.maxmara: Max Mara camel wool-blend palazzo pants(长裤.麦丝玛拉：驼色羊毛混纺阔腿裤)",
+                "pants.theory: Theory stretch-wool slim-fit pants(长裤.Theory：弹力羊毛修身裤)",
+                "pants.vince: Vince silk-blend cropped pants(长裤.Vince：真丝混纺七分裤)",
+                
+                "skirt.vw: red plaid Vivienne Westwood mini skirt(短裙.西太后：红色格子迷你裙)",
+                "skirt.miumiu: Miu Miu pleated tennis mini skirt(短裙.缪缪：百褶网球迷你裙)",
+                "skirt.sandro: Sandro A-line denim mini skirt(短裙.Sandro：A字型牛仔迷你裙)",
+                "skirt.thom: Thom Browne pleated wool midi skirt(短裙.汤姆布朗：羊毛百褶中长裙)",
+                "skirt.zimmermann: Zimmermann floral silk midi skirt(短裙.Zimmermann：花卉真丝中长裙)",
+                
+                "shorts.reformation: Reformation high-rise linen shorts(短裤.Reformation：高腰亚麻短裤)",
+                "shorts.rag: rag & bone Maya high-rise denim shorts(短裤.rag&bone：Maya高腰牛仔短裤)",
+                "shorts.aritzia: Aritzia TNA butter biker shorts(短裤.Aritzia：TNA柔滑骑行短裤)",
+                "shorts.ganni: GANNI printed cotton poplin shorts(短裤.GANNI：印花棉质府绸短裤)",
+                "shorts.agolde: AGOLDE Dee super high-rise shorts(短裤.AGOLDE：Dee超高腰短裤)",
+                
+                "leggings.lulu: Lululemon Align high-rise tight(紧身裤.露露柠檬：Align高腰紧身裤)",
+                "leggings.alo: Alo Yoga Airlift high-waist legging(紧身裤.Alo：Airlift高腰打底裤)",
+                "leggings.nike: Nike Pro Training tight(紧身裤.耐克：Pro系列训练紧身裤)",
+                "leggings.girlfriend: Girlfriend Collective compression legging(紧身裤.GC：压缩紧身裤)",
+                "leggings.pe: PE Nation racing stripe legging(紧身裤.PE：赛车条纹紧身裤)",
+                
+                "luxury.fendi: Fendi FF logo print silk pants(奢侈.芬迪：FF标志印花真丝裤)",
+                "luxury.gucci: Gucci GG Supreme canvas shorts(奢侈.古驰：GG Supreme帆布短裤)",
+                "luxury.dior: Dior Oblique technical shorts(奢侈.迪奥：Oblique科技面料短裤)",
+                "luxury.chanel: Chanel tweed high-waisted shorts(奢侈.香奈儿：高腰花呢短裤)",
+                "luxury.lv: Louis Vuitton monogram denim pants(奢侈.路易威登：老花牛仔裤)",
+                
+                "kimono.hakama: formal hakama divided skirt in navy(和服.袴：藏青色正式袴裙)",
+                "kimono.yukata: casual yukata coordinating bottom(和服.浴衣：休闲浴衣下装)",
+                
+                "hanbok.chima: full Korean hanbok skirt with high waist(韩服.裙子：韩服高腰大摆裙)",
+                "hanbok.ceremonial: royal Korean court ceremonial skirt(韩服.礼服：韩国宫廷礼仪裙)",
+                
+                "qipao.traditional: ankle-length fitted qipao skirt with side slit(旗袍.传统：及踝修身旗袍裙，侧开衩)",
+                "qipao.modern: knee-length qipao pencil skirt(旗袍.现代：及膝旗袍铅笔裙)",
+                
+                "ethnic.miao: Miao silver-decorated pleated skirt(民族.苗族：苗族银饰百褶裙)",
+                "ethnic.tibetan: colorful Tibetan long apron dress(民族.藏族：藏族彩色围裙装)",
+                "ethnic.yi: Yi nationality embroidered pleated skirt(民族.彝族：彝族刺绣百褶裙)",
+                "ethnic.dai: Dai nationality tight-fitting sarong(民族.傣族：傣族修身筒裙)",
+                "ethnic.mongolian: Mongolian deel with sash(民族.蒙古：蒙古族德勒配腰带)",
+                
+                "uniform.jk: pleated navy Japanese school uniform skirt(制服.日系：藏青色百褶日系校服裙)",
+                "uniform.summer: light grey summer uniform pleated skirt(制服.夏季：浅灰色夏季制服百褶裙)",
+                "uniform.winter: dark plaid winter uniform long skirt(制服.冬季：深色格纹冬季制服长裙)",
+                "uniform.tennis: white tennis-style uniform skirt with pleats(制服.网球：白色网球风格制服百褶裙)",
+                "uniform.aline: solid color A-line uniform skirt(制服.A字：纯色A字型制服裙)",
+                "uniform.pants: straight-leg uniform trousers in navy(制服.长裤：藏青色直筒制服长裤)",
+                "uniform.shorts: light grey summer uniform shorts(制服.短裤：浅灰色夏季制服短裤)"
             ]
         },
         "shoes": {
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "white Nike Air Force 1 sneakers(耐克空军一号白色运动鞋)",
-                "black Christian Louboutin stiletto heels(路易威登黑色细高跟鞋)",
-                "Stuart Weitzman knee-high boots(Stuart Weitzman及膝长靴)",
-                "Converse Chuck 70 canvas shoes(匡威70s帆布鞋)",
-                "Jimmy Choo strappy high heels(周仰杰细带高跟鞋)",
-                "Chanel leather ballet flats(香奈儿皮革芭蕾平底鞋)",
-                "Balenciaga Triple S chunky sneakers(巴黎世家Triple S厚底运动鞋)",
-                "Manolo Blahnik kitten heels(莫罗伯兰克小猫跟)",
-                "Dr. Martens combat boots(马丁博士军靴)",
-                "Hermès Oran sandals(爱马仕Oran凉鞋)"
+                "sneakers.nike: white Nike Air Force 1 low-top sneakers(运动鞋.耐克：白色空军一号低帮运动鞋)",
+                "sneakers.adidas: Adidas Superstar classic shell-toe sneakers(运动鞋.阿迪达斯：贝壳头经典运动鞋)",
+                "sneakers.nb: New Balance 990v5 grey running shoes(运动鞋.新百伦：990v5灰色跑鞋)",
+                "sneakers.converse: classic black Converse Chuck 70 high-tops(运动鞋.匡威：经典黑色70s高帮)",
+                "sneakers.vans: Vans Old Skool black and white skate shoes(运动鞋.万斯：Old Skool黑白滑板鞋)",
+                
+                "heels.louboutin: Christian Louboutin So Kate 120mm stilettos in black patent(高跟鞋.鲁布托：So Kate 120mm黑色漆皮细高跟)",
+                "heels.jimmy: Jimmy Choo Romy 100mm pointed pumps in nude(高跟鞋.周仰杰：Romy 100mm裸色尖头高跟)",
+                "heels.manolo: Manolo Blahnik Hangisi blue satin jeweled pumps(高跟鞋.莫罗伯兰克：Hangisi蓝色缎面宝石高跟)",
+                "heels.ysl: Saint Laurent Opyum 110mm black patent with gold logo heel(高跟鞋.圣罗兰：Opyum 110mm黑色漆皮金标高跟)",
+                "heels.valentino: Valentino Garavani Rockstud 100mm pumps(高跟鞋.华伦天奴：Rockstud 100mm铆钉高跟)",
+                
+                "boots.stuart: Stuart Weitzman Highland suede over-knee boots(靴子.斯图尔特：Highland麂皮过膝长靴)",
+                "boots.prada: Prada leather combat boots with pouch(靴子.普拉达：皮革战斗靴配包)",
+                "boots.doc: Dr. Martens 1460 classic 8-eye boots(靴子.马丁博士：1460经典8孔靴)",
+                "boots.bottega: Bottega Veneta Tire chelsea boots(靴子.宝缇嘉：Tire切尔西靴)",
+                "boots.fendi: Fendi FF motif ankle boots(靴子.芬迪：FF图案踝靴)",
+                
+                "flats.chanel: Chanel classic leather ballet flats with CC logo(平底鞋.香奈儿：经典皮革芭蕾平底鞋配CC标)",
+                "flats.gucci: Gucci Princetown leather mules(平底鞋.古驰：Princetown皮革穆勒鞋)",
+                "flats.hermes: Hermès Oran sandals in classic tan(平底鞋.爱马仕：Oran经典棕色凉鞋)",
+                "flats.ferragamo: Salvatore Ferragamo Varina bow flats(平底鞋.菲拉格慕：Varina蝴蝶结平底鞋)",
+                "flats.tods: Tod's Gommino driving shoes in suede(平底鞋.托德斯：Gommino麂皮豆豆鞋)",
+                
+                "sandals.gianvito: Gianvito Rossi Portofino 105mm sandals(凉鞋.吉安维托：Portofino 105mm凉鞋)",
+                "sandals.rene: René Caovilla snake-coil crystal sandals(凉鞋.莲妮：蛇形水晶缠绕凉鞋)",
+                "sandals.aquazzura: Aquazzura Wild Thing fringed suede sandals(凉鞋.Aquazzura：Wild Thing流苏麂皮凉鞋)",
+                "sandals.sophia: Sophia Webster Butterfly wing sandals(凉鞋.索菲亚：蝴蝶翼凉鞋)",
+                "sandals.giuseppe: Giuseppe Zanotti crystal-embellished sandals(凉鞋.朱塞佩：水晶装饰凉鞋)",
+                
+                "traditional.geta: traditional Japanese wooden Geta sandals(传统.木屐：传统日式木屐)",
+                "traditional.zori: formal Japanese Zori sandals with silk straps(传统.草履：正式日式丝带草履)",
+                "traditional.hanfu: Chinese Hanfu embroidered shoes with cloud pattern(传统.汉服：云纹绣花汉服鞋)",
+                "traditional.korean: Korean Hanbok embroidered shoes(传统.韩服：韩服绣花鞋)",
+                "traditional.qipao: Chinese traditional silk brocade slippers(传统.旗袍：传统丝绸锦缎绣花鞋)"
             ]
         },
         "hat": {
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "white Nike Sportswear Heritage86 cap(耐克Heritage86白色棒球帽)",
-                "black Kangol beret(康格鲁黑色贝雷帽)",
-                "beige Burberry bucket hat(博柏利米色渔夫帽)",
-                "Hermès silk ribbon straw sun hat(爱马仕丝带草编太阳帽)",
-                "Acne Studios knitted beanie(Acne Studios针织无檐帽)",
-                "Maison Michel wide brim felt hat(米歇尔世家宽檐毡帽)",
-                "vintage Brixton newsboy cap(Brixton复古报童帽)",
-                "Borsalino classic fedora with band(波索里诺经典饰带软呢帽)",
-                "Gucci GG canvas visor cap(古驰GG帆布遮阳帽)",
-                "Chanel camellia decorated sun hat(香奈儿山茶花装饰太阳帽)",
-                "Supreme box logo beanie(Supreme盒子标识无檐帽)",
-                "Ralph Lauren polo sports cap(拉夫劳伦polo运动帽)",
-                "Prada Re-Nylon bucket hat(普拉达再生尼龙渔夫帽)",
-                "Jacquemus Le Bob Gadjo bucket hat(Jacquemus经典渔夫帽)",
-                "Celine wool felt wide brim hat(赛琳羊毛毡宽檐帽)"
+                "sports.nike: white Nike Heritage86 cap with small swoosh logo(运动.耐克：白色Heritage86棒球帽配小勾标)",
+                "sports.adidas: black Adidas Trefoil classic baseball cap(运动.阿迪达斯：黑色三叶草经典棒球帽)",
+                "sports.puma: Puma curved visor cap with cat logo(运动.彪马：曲线帽檐配猫标棒球帽)",
+                "sports.under: Under Armour mesh-back training cap(运动.安德玛：网眼背部训练帽)",
+                "sports.nb: New Balance performance running cap(运动.新百伦：专业跑步帽)",
+                
+                "casual.kangol: black Kangol wool 504 flat cap(休闲.康格鲁：黑色羊毛504平顶帽)",
+                "casual.brixton: vintage Brixton Fiddler fisherman cap(休闲.布里克斯顿：复古水手帽)",
+                "casual.bailey: Bailey Western cowboy hat in brown felt(休闲.贝利：棕色毡制西部牛仔帽)",
+                "casual.stetson: Stetson weathered leather outback hat(休闲.斯特森：做旧皮革澳式牛仔帽)",
+                "casual.carhartt: Carhartt canvas workwear beanie(休闲.卡哈特：帆布工装无檐帽)",
+                
+                "designer.burberry: beige Burberry check bucket hat(设计师.博柏利：米色格纹渔夫帽)",
+                "designer.gucci: Gucci GG canvas baseball cap(设计师.古驰：GG帆布棒球帽)",
+                "designer.prada: Prada Re-Nylon bucket hat with logo(设计师.普拉达：再生尼龙渔夫帽配标志)",
+                "designer.fendi: Fendi FF motif visor cap(设计师.芬迪：FF图案遮阳帽)",
+                "designer.lv: Louis Vuitton monogram bucket hat(设计师.路易威登：老花渔夫帽)",
+                
+                "luxury.hermes: Hermès silk ribbon panama hat(奢侈.爱马仕：丝带巴拿马草帽)",
+                "luxury.chanel: Chanel tweed bucket hat with chain detail(奢侈.香奈儿：花呢渔夫帽配链条)",
+                "luxury.dior: Dior Oblique print baseball cap(奢侈.迪奥：Oblique印花棒球帽)",
+                "luxury.borsalino: Borsalino classic fedora with grosgrain band(奢侈.波索里诺：经典软呢帽配罗缎带)",
+                "luxury.maison: Maison Michel felt wide brim hat(奢侈.米歇尔：毡制宽檐帽)",
+                
+                "traditional.gat: traditional Korean horsehair hat(传统.갓：韩国传统马尾帽)",
+                "traditional.hanfu: Chinese Ming dynasty style crown(传统.汉服：明制冠冕)",
+                "traditional.kasa: Japanese woven bamboo rain hat(传统.笠：日式竹编斗笠)",
+                "traditional.mao: Chinese style mandarin cap(传统.帽：中式官帽)",
+                "traditional.gasa: Korean summer bamboo hat(传统.笠子：韩式夏季竹帽)",
+                
+                "winter.acne: Acne Studios ribbed wool beanie(冬季.Acne：罗纹羊毛无檐帽)",
+                "winter.moncler: Moncler logo patch beanie(冬季.蒙口：标志贴片无檐帽)",
+                "winter.supreme: Supreme box logo beanie(冬季.Supreme：盒子标识无檐帽)",
+                "winter.stone: Stone Island compass logo beanie(冬季.石岛：指南针标无檐帽)",
+                "winter.thom: Thom Browne tricolor stripe beanie(冬季.汤姆布朗：三色条纹无檐帽)"
             ]
         },
         "jewelry": {
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "delicate Cartier gold Love necklace(卡地亚金色Love项链)",
-                "Tiffany & Co. pearl earrings(蒂芙尼珍珠耳环)",
-                "Van Cleef & Arpels Alhambra bracelet stack(梵克雅宝四叶草手链组合)",
-                "minimalist Bulgari B.zero1 rings(宝格丽B.zero1简约戒指)",
-                "Chopard crystal pendant necklace(萧邦水晶吊坠项链)",
-                "hoop earrings(圆环耳环)",
-                "charm bracelet(串珠手链)",
-                "layered necklaces(多层项链)",
-                "statement cocktail ring(夸张的鸡尾酒戒指)",
-                "anklet with tiny bells(带小铃铛的脚链)",
-                "vintage brooch(复古胸针)",
-                "dainty butterfly hair clips(精致的蝴蝶发夹)",
-                "pearl hair pins(珍珠发卡)",
-                "silk scarf(丝巾)",
-                "leather belt with gold buckle(金扣皮带)"
+                "necklace.cartier: delicate Cartier Love necklace in rose gold(项链.卡地亚：玫瑰金Love项链)",
+                "necklace.tiffany: Tiffany & Co. diamond pendant on platinum chain(项链.蒂芙尼：铂金链条钻石吊坠)",
+                "necklace.vca: Van Cleef & Arpels Vintage Alhambra mother-of-pearl necklace(项链.梵克雅宝：复古四叶草珍珠母贝项链)",
+                "necklace.bvlgari: Bulgari Serpenti diamond-encrusted snake necklace(项链.宝格丽：Serpenti钻石蛇形项链)",
+                "necklace.chopard: Chopard Happy Diamonds floating crystal necklace(项链.萧邦：Happy Diamonds浮动水晶项链)",
+                
+                "earrings.tiffany: Tiffany & Co. South Sea pearl drop earrings(耳环.蒂芙尼：南洋珍珠垂坠耳环)",
+                "earrings.cartier: Cartier Juste un Clou diamond stud earrings(耳环.卡地亚：Juste un Clou钻石耳钉)",
+                "earrings.vca: Van Cleef & Arpels Vintage Alhambra gold earrings(耳环.梵克雅宝：复古四叶草金耳环)",
+                "earrings.dior: Dior Tribales asymmetric pearl earrings(耳环.迪奥：Tribales不对称珍珠耳环)",
+                "earrings.chanel: Chanel CC logo crystal-embellished earrings(耳环.香奈儿：CC标志水晶耳环)",
+                
+                "bracelet.cartier: stack of Cartier Love bracelets in mixed metals(手镯.卡地亚：混合金属Love手镯组合)",
+                "bracelet.vca: Van Cleef & Arpels Vintage Alhambra 5 motif bracelet(手镯.梵克雅宝：复古四叶草5片手链)",
+                "bracelet.bvlgari: Bulgari B.zero1 bangle in rose gold(手镯.宝格丽：B.zero1玫瑰金手镯)",
+                "bracelet.tiffany: Tiffany & Co. T wire bracelet with diamonds(手镯.蒂芙尼：T系列钻石线圈手镯)",
+                "bracelet.hermes: Hermès Clic H enamel bracelet(手镯.爱马仕：Clic H珐琅手镯)",
+                
+                "ring.cartier: Cartier Trinity ring tri-color gold(戒指.卡地亚：Trinity三色金戒指)",
+                "ring.tiffany: Tiffany & Co. classic solitaire engagement ring(戒指.蒂芙尼：经典单钻订婚戒指)",
+                "ring.bvlgari: Bulgari B.zero1 ring in white gold(戒指.宝格丽：B.zero1白金戒指)",
+                "ring.vca: Van Cleef & Arpels Perlée diamond ring(戒指.梵克雅宝：Perlée钻石戒指)",
+                "ring.chanel: Chanel Coco Crush ring in quilted gold(戒指.香奈儿：Coco Crush绗缝金戒指)",
+                
+                "hair.classic: elegant pearl hair pins in vintage style(发饰.经典：复古风格珍珠发卡)",
+                "hair.modern: minimalist gold geometric hair clips(发饰.现代：简约金色几何发夹)",
+                "hair.crystal: sparkly crystal-embellished hair accessories(发饰.水晶：闪亮水晶装饰发饰)",
+                "hair.floral: delicate flower-shaped hair pins with pearls(发饰.花卉：珍珠花朵发卡)",
+                "hair.butterfly: dainty butterfly hair clips with gemstones(发饰.蝴蝶：宝石蝴蝶发夹)",
+                
+                "traditional.hanfu: classical Chinese hairpins with jade and tassels(传统.汉服：玉石流苏发钗)",
+                "traditional.kanzashi: Japanese Kanzashi flower hair ornaments(传统.簪子：日式花簪发饰)",
+                "traditional.binyeo: Korean traditional ornate hair pins(传统.发簪：韩式传统发簪)",
+                "traditional.indian: Indian temple jewelry with intricate details(传统.印度：印度庙宇风复杂纹样饰品)",
+                "traditional.thai: Thai traditional gold niello jewelry(传统.泰国：泰国传统掐丝珐琅金饰)"
             ]
         },
         "glasses": {
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "round wire-frame glasses(圆形金属框眼镜)",
-                "cat-eye sunglasses(猫眼墨镜)",
-                "oversized square sunglasses(大框方形墨镜)",
-                "classic aviator sunglasses(经典飞行员墨镜)",
-                "transparent frame glasses(透明框眼镜)",
-                "retro round sunglasses(复古圆形墨镜)",
-                "rimless glasses(无框眼镜)",
-                "tortoise shell glasses(玳瑁框眼镜)",
-                "tinted lens fashion glasses(彩色镜片装饰眼镜)",
-                "sport sunglasses(运动墨镜)",
-                "black silk blindfold(黑色丝质眼罩)",
-                "lace eye mask(蕾丝眼罩)",
-                "elegant silk eye mask with gold embroidery(金丝绣花丝质眼罩)",
-                "sheer chiffon scarf over eyes(覆盖眼睛的薄雪纺丝巾)",
-                "delicate lace veil partially covering eyes(部分遮盖眼睛的精致蕾丝面纱)",
-                "translucent silk scarf draped over head and eyes(披在头部和眼睛上的半透明丝巾)"
+                "optical.rayban: Ray-Ban round metal frame optical glasses in gold(光学镜.雷朋：金色圆形金属框光学眼镜)",
+                "optical.oliver: Oliver Peoples O'Malley classic tortoise frame(光学镜.奥利弗：O'Malley经典玳瑁框)",
+                "optical.tom: Tom Ford blue light blocking clear frame glasses(光学镜.汤姆福特：防蓝光透明框眼镜)",
+                "optical.dior: Dior butterfly-frame optical glasses in rose gold(光学镜.迪奥：玫瑰金蝴蝶框光学眼镜)",
+                "optical.cartier: Cartier rimless titanium frame with gold details(光学镜.卡地亚：金色细节钛金属无框眼镜)",
+                
+                "sunglasses.celine: Celine oversized square acetate sunglasses(太阳镜.赛琳：超大醋酸纤维方框墨镜)",
+                "sunglasses.gucci: Gucci cat-eye crystal-embellished sunglasses(太阳镜.古驰：水晶装饰猫眼墨镜)",
+                "sunglasses.gentle: Gentle Monster avant-garde geometric sunglasses(太阳镜.GM：前卫几何造型墨镜)",
+                "sunglasses.prada: Prada Linea Rossa sporty wraparound sunglasses(太阳镜.普拉达：运动型包覆式墨镜)",
+                "sunglasses.chanel: Chanel pearl-embellished round sunglasses(太阳镜.香奈儿：珍珠装饰圆框墨镜)",
+                
+                "designer.fendi: Fendi FF logo temple rectangular glasses(设计师.芬迪：FF标志镜腿方框眼镜)",
+                "designer.versace: Versace Medusa medallion cat-eye glasses(设计师.范思哲：美杜莎徽章猫眼镜)",
+                "designer.lv: Louis Vuitton Millionaire oversized sunglasses(设计师.路易威登：Millionaire超大墨镜)",
+                "designer.balenciaga: Balenciaga futuristic shield sunglasses(设计师.巴黎世家：未来感护目墨镜)",
+                "designer.ysl: Saint Laurent heart-shaped metal frame sunglasses(设计师.圣罗兰：金属心形框墨镜)",
+                
+                "fashion.mask: avant-garde full-face shield with metallic finish(时尚.面罩：金属感全脸防护罩)",
+                "fashion.visor: oversized futuristic sun visor in gradient tint(时尚.遮阳：渐变色未来感大型遮阳镜)",
+                "fashion.retro: vintage 70s inspired oversized gradient lens(时尚.复古：70年代复古风渐变大镜片)",
+                "fashion.sport: high-tech sports performance glasses with color lens(时尚.运动：高科技运动表现型彩色镜片)",
+                "fashion.cyber: cyberpunk LED illuminated visor glasses(时尚.赛博：赛博朋克LED发光遮阳镜)"
             ]
         },
         "handbag": {
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "classic black leather Chanel flap bag(香奈儿经典黑色皮革翻盖包)",
-                "small white Louis Vuitton crossbody bag(路易威登小巧白色斜挎包)",
-                "luxury beige Hermès Birkin tote bag(爱马仕米色铂金包)",
-                "mini pink Dior chain Lady bag(迪奥粉色迷你链条Lady包)",
-                "brown leather Mulberry Alexa satchel bag(玛百莉棕色皮革Alexa邮差包)",
-                "elegant gold YSL clutch(圣罗兰优雅金色手拿包)",
-                "vintage quilted Chanel 2.55 bag(香奈儿复古绗缝2.55包)",
-                "casual Longchamp canvas tote bag(珑骧休闲帆布托特包)",
-                "structured Fendi Peekaboo bag(芬迪硬挺Peekaboo手提包)",
-                "woven Loewe straw basket bag(罗意威编织草编篮子包)",
-                "metallic Bottega Veneta Pouch clutch(宝缇嘉金属光泽Pouch手拿包)",
-                "slouchy Balenciaga Hobo bag(巴黎世家随性月牙包)",
-                "trendy Gucci bucket bag(古驰时尚水桶包)",
-                "chic Prada nylon backpack(普拉达时髦尼龙双肩包)",
-                "embellished Roger Vivier evening bag(罗杰·维维亚装饰华丽的晚宴包)"
+                "classic.hermes: Hermès Birkin 25 in black Togo leather(经典.爱马仕：黑色Togo皮革25寸铂金包)",
+                "classic.chanel: Chanel Classic Flap in quilted black caviar(经典.香奈儿：黑色鱼子酱皮绗缝经典翻盖包)",
+                "classic.kelly: Hermès Kelly 28 in gold epsom leather(经典.凯莉：金色Epsom皮革28寸凯莉包)",
+                "classic.lady: Christian Dior Lady Dior in blush pink lambskin(经典.迪奥：粉色羊皮Lady手提包)",
+                "classic.boy: Chanel Boy Bag in dark blue calfskin(经典.Boy：深蓝色小牛皮Boy包)",
+                
+                "trendy.bottega: Bottega Veneta Cassette in padded Intrecciato(潮流.宝缇嘉：编织羊皮Cassette包)",
+                "trendy.puzzle: Loewe Puzzle bag in tan classic calfskin(潮流.罗意威：经典棕色小牛皮Puzzle包)",
+                "trendy.jacquemus: Jacquemus Le Chiquito mini bag in white(潮流.Jacquemus：白色Le Chiquito迷你包)",
+                "trendy.fendi: Fendi Baguette in purple sequined fabric(潮流.芬迪：紫色亮片Baguette包)",
+                "trendy.prada: Prada Re-Edition 2000 nylon mini bag(潮流.普拉达：2000年复刻尼龙迷你包)",
+                
+                "casual.longchamp: Longchamp Le Pliage large tote in navy(休闲.珑骧：海军蓝大号Le Pliage托特包)",
+                "casual.coach: Coach Tabby shoulder bag in cream leather(休闲.蔻驰：奶油色皮革Tabby肩包)",
+                "casual.marc: Marc Jacobs Snapshot camera bag in colorblock(休闲.马克：拼色Snapshot相机包)",
+                "casual.kate: Kate Spade crossbody in bright coral leather(休闲.凯特：亮珊瑚色皮革斜挎包)",
+                "casual.tory: Tory Burch Fleming convertible shoulder bag(休闲.托里：Fleming可转换肩包)",
+                
+                "evening.jimmy: Jimmy Choo Bon Bon crystal bucket bag(晚装.周仰杰：水晶装饰Bon Bon水桶包)",
+                "evening.valentino: Valentino Garavani crystal-embellished clutch(晚装.华伦天奴：水晶装饰手拿包)",
+                "evening.judith: Judith Leiber Couture crystal minaudière(晚装.莱博：水晶晚宴包)",
+                "evening.roger: Roger Vivier satin evening clutch with crystal buckle(晚装.维维亚：缎面水晶扣手拿包)",
+                "evening.alexander: Alexander McQueen Four-Ring crystal clutch(晚装.麦昆：四环水晶手拿包)",
+                
+                "backpack.louis: Louis Vuitton Palm Springs Mini backpack(双肩包.路易威登：Palm Springs迷你双肩包)",
+                "backpack.prada: Prada Re-Nylon mini backpack in black(双肩包.普拉达：黑色再生尼龙迷你双肩包)",
+                "backpack.mcm: MCM Stark side-studs backpack in Visetos(双肩包.MCM：Visetos铆钉Stark双肩包)",
+                "backpack.fendi: Fendi FF logo mini backpack in brown(双肩包.芬迪：棕色FF标志迷你双肩包)",
+                "backpack.gucci: Gucci GG Marmont quilted leather backpack(双肩包.古驰：绗缝皮革GG Marmont双肩包)"
             ]
         }
     },
@@ -302,21 +562,29 @@
             "default": "calm expression, looking directly at the camera(平静的表情，直视相机)",
             "choices": [
                 "none(无)",
-                "calm expression, looking directly at the camera(平静的表情，直视相机)",
-                "gentle smile with soft eyes(温柔的微笑，眼神柔和)",
-                "confident smirk with raised eyebrow(自信的笑容，挑眉)",
-                "laughing naturally with eyes closed(自然大笑，眼睛微闭)",
-                "dreamy expression looking into distance(梦幻的表情，望向远方)",
-                "playful wink with bright smile(俏皮眨眼，明媚的笑容)",
-                "serene expression with slight smile(安详的表情，淡淡的微笑)",
-                "thoughtful look with parted lips(若有所思的表情，双唇微启)",
-                "cheerful grin showing teeth(开心的露齿笑)",
-                "mysterious smile with intense gaze(神秘的微笑，眼神深邃)",
-                "surprised expression with wide eyes(惊讶的表情，眼睛睁大)",
-                "elegant expression with subtle smile(优雅的表情，含蓄的微笑)",
-                "cute pout with puppy eyes(可爱的嘟嘴，狗狗眼)",
-                "focused expression looking at something nearby(专注的表情，看着近处)",
-                "joyful expression with rosy cheeks(开心的表情，脸颊泛红)"
+                "neutral.calm: calm expression, looking directly at the camera(自然.平静：平静的表情，直视相机)",
+                "neutral.serene: serene expression with slight smile(自然.安详：安详的表情，淡淡的微笑)",
+                "neutral.focused: focused expression looking at something nearby(自然.专注：专注的表情，看着近处)",
+                "neutral.thoughtful: thoughtful look with parted lips(自然.沉思：若有所思的表情，双唇微启)",
+                "neutral.dreamy: dreamy expression looking into distance(自然.梦幻：梦幻的表情，望向远方)",
+                
+                "smile.gentle: gentle smile with soft eyes(微笑.温柔：温柔的微笑，眼神柔和)",
+                "smile.confident: confident smirk with raised eyebrow(微笑.自信：自信的笑容，挑眉)",
+                "smile.cheerful: cheerful grin showing teeth(微笑.开心：开心的露齿笑)",
+                "smile.joyful: joyful expression with rosy cheeks(微笑.愉悦：开心的表情，脸颊泛红)",
+                "smile.mysterious: mysterious smile with intense gaze(微笑.神秘：神秘的微笑，眼神深邃)",
+                
+                "playful.wink: playful wink with bright smile(俏皮.眨眼：俏皮眨眼，明媚的笑容)",
+                "playful.laugh: laughing naturally with eyes closed(俏皮.大笑：自然大笑，眼睛微闭)",
+                "playful.cute: cute pout with puppy eyes(俏皮.可爱：可爱的嘟嘴，狗狗眼)",
+                "playful.surprised: surprised expression with wide eyes(俏皮.惊讶：惊讶的表情，眼睛睁大)",
+                "playful.mischievous: mischievous grin with twinkling eyes(俏皮.调皮：调皮的笑容，眼中带着狡黠)",
+                
+                "elegant.refined: elegant expression with subtle smile(优雅.精致：优雅的表情，含蓄的微笑)",
+                "elegant.poised: poised look with graceful confidence(优雅.从容：从容的表情，优雅自信)",
+                "elegant.sophisticated: sophisticated expression with knowing look(优雅.成熟：成熟的表情，会心一笑)",
+                "elegant.composed: composed expression with dignified bearing(优雅.沉稳：沉稳的表情，庄重气质)",
+                "elegant.graceful: graceful smile with gentle eyes(优雅.雅致：雅致的微笑，温柔眼神)"
             ]
         }
     },
@@ -325,22 +593,49 @@
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "commercial_spaces.mall_boutique: luxury brand flagship store facade with elegant window displays, mall atrium skylight casting soft diffused light from above on subject's face and outfit while illuminating store displays with bright even lighting, creating gentle shadows under cheekbones and subtle highlights on hair, environment filled with balanced ambient light that reveals architectural details(商业空间.精品商场：优雅橱窗陈列的旗舰店外立面，商场中庭天窗从上方投射柔和漫射光打在人物脸部和服装上，同时明亮均匀地照亮商店展示，在颧骨下方形成温和阴影，头发上产生细腻光泽，环境充满平衡的环境光展现建筑细节)",
-                "commercial_spaces.cafe: cute themed cafe with pastel decor and neon signs, warm string lights creating a soft glow around subject's silhouette while casting gentle shadows across face, neon accents adding colorful highlights to hair and skin, ambient cafe lighting providing warm fill light that softens features and illuminates decor details(商业空间.咖啡店：粉彩装饰与霓虹灯的主题咖啡店，温暖串灯在人物轮廓周围创造柔和光晕并在脸部投射温和阴影，霓虹灯为头发和肌肤添加彩色高光，咖啡店环境光提供温暖补光柔化特征并照亮装饰细节)",
-                "natural_scenes.sunset: seaside boardwalk with palm trees and ocean view, golden hour sunlight casting long dramatic shadows while creating warm rim light around subject's silhouette, soft reflected light from ocean providing gentle fill light on face, environment bathed in rich amber tones with palm shadows creating dynamic patterns(自然场景.日落：棕榈树和海景木栈道，黄金时刻阳光投射戏剧性长阴影同时在人物轮廓周围创造温暖轮廓光，海面反射的柔光为脸部提供温和补光，环境沐浴在丰富的琥珀色调中，棕榈树影创造动态图案)",
-                "professional_settings.studio: photo studio with white cyclorama background, main light sculpting facial features with soft shadows, fill light gently illuminating shadow areas, rim light defining body silhouette against background, reflectors providing subtle highlights in eyes and hair(专业场景.摄影棚：白色无限背景，主光塑造面部特征形成柔和阴影，补光温和照亮阴影区域，轮廓光勾勒人物身体轮廓，反光板在眼睛和头发上创造细腻高光)",
-                "night_scenes.urban_night: bustling shopping district with fashion boutiques and neon signs, colorful neon lights casting vibrant highlights across face and outfit, street lamps providing warm top light, shop windows adding soft fill light from multiple angles, creating a dynamic interplay of colored shadows and highlights(夜景.城市夜景：时尚精品店和霓虹招牌的繁华商业区，彩色霓虹灯在脸部和服装上投射鲜艳高光，路灯提供温暖顶光，橱窗提供多角度柔和补光，营造色彩阴影和高光的动态交互)",
-                "indoor_natural_light.window_scene: art gallery space with minimalist white walls and track lighting, soft natural window light creating gentle shadows across face while providing main illumination, warm indoor lights adding fill light to shadow areas, track lights highlighting specific features and creating depth through selective lighting(室内自然光.窗景：极简白墙和轨道灯的艺术画廊，柔和自然窗光在脸部创造温和阴影并提供主要照明，温暖室内灯光为阴影区域补光，轨道灯突出特定特征并通过选择性照明创造深度)",
-                "natural_scenes.dawn: misty meadow at sunrise with dewdrops on grass, early morning sunlight casting long soft shadows while creating golden rim light on subject's silhouette, cool ambient light mixing with warm directional rays, morning mist diffusing light and adding atmospheric depth(自然场景.黎明：晨露草地的清晨，朝阳投射柔和长影同时在人物轮廓形成金色轮廓光，清凉环境光与温暖定向光交融，晨雾漫射光线增添氛围深度)",
-                "natural_scenes.golden_sunset: rolling hills bathed in golden light, intense warm sunlight creating dramatic rim lighting and long shadows, sky colors reflecting off skin with warm orange tones, backlit dust particles adding atmospheric glow(自然场景.金色日落：沐浴在金光中的起伏丘陵，强烈温暖阳光创造戏剧性轮廓光和长阴影，天空色彩在皮肤上反射温暖橙色调，逆光尘埃增添大气光晕)",
-                "natural_scenes.summer_noon: sun-drenched garden with vibrant flowers, harsh overhead sunlight creating strong shadows and bright highlights, heat shimmer adding atmospheric distortion, reflected light from surrounding foliage providing natural fill(自然场景.夏日正午：阳光普照的花园，强烈顶光形成深邃阴影和明亮高光，热浪扭曲增添氛围，周围植物反射光提供自然补光)",
-                "natural_scenes.cloudy_afternoon: overcast sky over wildflower field, soft diffused lighting eliminating harsh shadows, even illumination across subject, muted colors with enhanced texture detail(自然场景.阴天午后：野花田野上的阴云，柔和漫射光消除硬阴影，主体均匀照明，柔和色彩突显纹理细节)",
-                "urban_decay.abandoned_corner: weathered concrete walls with peeling paint, filtered sunlight through broken windows creating dramatic light beams, ambient bounce light softening shadows, dust particles catching light rays(城市废墟.废弃角落：斑驳混凝土墙面，破碎窗户透过的阳光形成戏剧性光束，环境反射光软化阴影，灰尘颗粒捕捉光线)",
-                "urban_decay.overgrown_ruins: crumbling architecture overtaken by vegetation, dappled sunlight filtering through leaves creating dynamic patterns, soft green bounce light from foliage, natural rim lighting through gaps(城市废墟.杂草遗迹：被植被占据的破败建筑，树叶过滤的斑驳阳光创造动态图案，植物柔和绿色反光，缝隙透过的自然轮廓光)",
-                "wild_nature.dense_forest: thick forest canopy with filtered light, soft green ambient light from leaves, dramatic light beams piercing through trees, dappled shadows creating dynamic patterns(野性自然.茂密森林：浓密树冠过滤光线，叶片柔和绿色环境光，穿透树林的戏剧性光束，斑驳阴影创造动态图案)",
-                "wild_nature.mountain_vista: rugged mountain landscape at dawn, early sunlight creating dramatic shadows across valleys, cool ambient light from sky, warm directional light highlighting terrain(野性自然.山景：黎明时分的崎岖山景，晨光在山谷间投射戏剧性阴影，天空清凉环境光，温暖定向光突显地形)",
-                "urban_night.rain_street: wet city street reflecting neon lights, raindrops catching and splitting light creating sparkles, diffused glow through mist, multiple colored light sources creating complex shadows(城市夜景.雨街：反射霓虹的湿润街道，雨滴捕捉折射光线形成闪烁，薄雾中的漫射光晕，多彩光源创造复杂阴影)",
-                "urban_night.subway_entrance: underground station entrance with mixed lighting, fluorescent overhead lights creating stark shadows, distant street lights adding warm accents, reflected light from wet surfaces(城市夜景.地铁入口：混合照明的地下站台入口，荧光顶灯创造鲜明阴影，远处街灯增添温暖重点，潮湿表面反射光)"
+                "commercial.mall: luxury brand flagship store facade with elegant window displays, mall atrium skylight casting soft diffused light from above on subject's face and outfit while illuminating store displays with bright even lighting, creating gentle shadows under cheekbones and subtle highlights on hair, environment filled with balanced ambient light that reveals architectural details(商业.商场：优雅橱窗陈列的旗舰店外立面，商场中庭天窗从上方投射柔和漫射光打在人物脸部和服装上，同时明亮均匀地照亮商店展示，在颧骨下方形成温和阴影，头发上产生细腻光泽，环境充满平衡的环境光展现建筑细节)",
+                
+                "commercial.cafe: cute themed cafe with pastel decor and neon signs, warm string lights creating a soft glow around subject's silhouette while casting gentle shadows across face, neon accents adding colorful highlights to hair and skin, ambient cafe lighting providing warm fill light that softens features and illuminates decor details(商业.咖啡：粉彩装饰与霓虹灯的主题咖啡店，温暖串灯在人物轮廓周围创造柔和光晕并在脸部投射温和阴影，霓虹灯为头发和肌肤添加彩色高光，咖啡店环境光提供温暖补光柔化特征并照亮装饰细节)",
+                
+                "natural.sunset: seaside boardwalk with palm trees and ocean view, golden hour sunlight casting long dramatic shadows while creating warm rim light around subject's silhouette, soft reflected light from ocean providing gentle fill light on face, environment bathed in rich amber tones with palm shadows creating dynamic patterns(自然.日落：棕榈树和海景木栈道，黄金时刻阳光投射戏剧性长阴影同时在人物轮廓周围创造温暖轮廓光，海面反射的柔光为脸部提供温和补光，环境沐浴在丰富的琥珀色调中，棕榈树影创造动态图案)",
+                
+                "indoor.studio: photo studio with white cyclorama background, main light sculpting facial features with soft shadows, fill light gently illuminating shadow areas, rim light defining body silhouette against background, reflectors providing subtle highlights in eyes and hair(室内.摄影棚：白色无限背景，主光塑造面部特征形成柔和阴影，补光温和照亮阴影区域，轮廓光勾勒人物身体轮廓，反光板在眼睛和头发上创造细腻高光)",
+                
+                "night.urban: bustling shopping district with fashion boutiques and neon signs, colorful neon lights casting vibrant highlights across face and outfit, street lamps providing warm top light, shop windows adding soft fill light from multiple angles, creating a dynamic interplay of colored shadows and highlights(夜景.商业区：时尚精品店和霓虹招牌的繁华商业区，彩色霓虹灯在脸部和服装上投射鲜艳高光，路灯提供温暖顶光，橱窗提供多角度柔和补光，营造色彩阴影和高光的动态交互)",
+                
+                "indoor.window: art gallery space with minimalist white walls and track lighting, soft natural window light creating gentle shadows across face while providing main illumination, warm indoor lights adding fill light to shadow areas, track lights highlighting specific features and creating depth through selective lighting(室内.窗景：极简白墙和轨道灯的艺术画廊，柔和自然窗光在脸部创造温和阴影并提供主要照明，温暖室内灯光为阴影区域补光，轨道灯突出特定特征并通过选择性照明创造深度)",
+                
+                "natural.dawn: misty meadow at sunrise with dewdrops on grass, early morning sunlight casting long soft shadows while creating golden rim light on subject's silhouette, cool ambient light mixing with warm directional rays, morning mist diffusing light and adding atmospheric depth(自然.黎明：晨露草地的清晨，朝阳投射柔和长影同时在人物轮廓形成金色轮廓光，清凉环境光与温暖定向光交融，晨雾漫射光线增添氛围深度)",
+                
+                "natural.sky: clear blue sky with scattered white clouds, low angle perspective creating dramatic upward view, bright sunlight casting soft shadows across subject's features while creating natural rim lighting around silhouette, diffused light from clouds providing gentle fill light on face, atmosphere creating depth with subtle aerial perspective, cloud shadows adding dynamic patterns to scene(自然.天空：点缀白云的清澈蓝天，低角度视角创造戏剧性仰视效果，明亮阳光在主体特征上投射柔和阴影同时在轮廓周围形成自然轮廓光，云层漫射光为脸部提供柔和补光，大气层通过细微的空气透视创造深度感，云影为场景增添动态图案)",
+                
+                "natural.golden: rolling hills bathed in golden light, intense warm sunlight creating dramatic rim lighting and long shadows, sky colors reflecting off skin with warm orange tones, backlit dust particles adding atmospheric glow(自然.黄金：沐浴在金光中的起伏丘陵，强烈温暖阳光创造戏剧性轮廓光和长阴影，天空色彩在皮肤上反射温暖橙色调，逆光尘埃增添大气光晕)",
+                
+                "indoor.vintage: nostalgic room filled with antique collectibles like photo albums, gramophone, teapots and vintage cups, warm sunlight streaming through windows casting long shadows across wooden furniture, creating soft rim lighting on subject while illuminating floating dust particles, brass and glass objects catching and reflecting light adding warm ambient glow, aged surfaces providing subtle diffused fill light(室内.复古：怀旧房间摆放着相册、留声机、茶壶和复古杯子等古董收藏品，温暖阳光透过窗户在木质家具上投射长影，在主体周围形成柔和轮廓光的同时照亮漂浮的尘埃，黄铜和玻璃物件捕捉反射光线增添温暖环境光晕，老旧表面提供柔和漫反射补光)",
+                
+                "urban.highrise: bustling commercial street with towering skyscrapers, luxury brand storefronts and illuminated billboards, scattered sunlight filtering between buildings casting selective highlights on subject, ambient bounce light from glass facades and store windows providing soft fill, street lamps and shop signs adding warm accent lighting, flowing crowds creating dynamic foreground elements, deep shadows in urban canyon with subtle rim lighting from reflected surfaces, creating vibrant metropolitan atmosphere with architectural silhouettes(都市.高楼：繁华商业街与高耸摩天大楼，奢侈品店面和发光广告牌，建筑间散射的阳光在主体上形成选择性高光，玻璃幕墙和橱窗的环境反射光提供柔和补光，路灯和店铺招牌增添温暖重点照明，流动人群构成动态前景元素，城市峡谷中的深邃阴影与反射面的细微轮廓光，营造充满活力的大都市氛围和建筑剪影)",
+                
+                "natural.noon: sun-drenched garden with vibrant flowers, harsh overhead sunlight creating strong shadows and bright highlights, heat shimmer adding atmospheric distortion, reflected light from surrounding foliage providing natural fill(自然.正午：阳光普照的花园，强烈顶光形成深邃阴影和明亮高光，热浪扭曲增添氛围，周围植物反射光提供自然补光)",
+                
+                "natural.cloudy: overcast sky over wildflower field, soft diffused lighting eliminating harsh shadows, even illumination across subject, muted colors with enhanced texture detail(自然.阴天：野花田野上的阴云，柔和漫射光消除硬阴影，主体均匀照明，柔和色彩突显纹理细节)",
+                
+                "natural.snow: heavy snowfall enveloping subject in winter atmosphere, thick snowflakes clinging to eyelashes and collecting on coat shoulders, rosy cheeks and visible breath in cold air, soft diffused light from overcast sky and pristine snow creating ethereal wraparound illumination, snow accumulating heavily on clothing creating dimensional texture, delicate ice crystals forming on hair catching and refracting light, deep snow reflecting cool ambient light upward casting soft shadows under chin, swirling snowfall between camera and subject creating atmospheric depth with layered translucency, snow-filtered winter sunlight rimming silhouette with cool ethereal glow(自然.飘雪：浓密飘雪笼罩人物营造冬日氛围，厚重雪花凝结在睫毛上和大衣肩头，寒冷空气中泛红的脸颊和可见的呼吸，阴云和纯净雪地的柔和漫射光创造空灵环绕照明，厚重积雪为衣物创造立体质感，头发上形成的细腻冰晶捕捉折射光线，深雪反射清冷环境光向上投射在下巴形成柔和阴影，相机与人物之间旋转飘落的雪花通过层叠通透感创造空间深度，雪花过滤的冬日阳光为轮廓镶上清冷空灵光晕)",
+                
+                "urban.decay: weathered concrete walls with peeling paint, filtered sunlight through broken windows creating dramatic light beams, ambient bounce light softening shadows, dust particles catching light rays(都市.废墟：斑驳混凝土墙面，破碎窗户透过的阳光形成戏剧性光束，环境反射光软化阴影，灰尘颗粒捕捉光线)",
+                
+                "urban.overgrown: crumbling architecture overtaken by vegetation, dappled sunlight filtering through leaves creating dynamic patterns, soft green bounce light from foliage, natural rim lighting through gaps(都市.荒废：被植被占据的破败建筑，树叶过滤的斑驳阳光创造动态图案，植物柔和绿色反光，缝隙透过的自然轮廓光)",
+                
+                "nature.forest: thick forest canopy with filtered light, soft green ambient light from leaves, dramatic light beams piercing through trees, dappled shadows creating dynamic patterns(自然.森林：浓密树冠过滤光线，叶片柔和绿色环境光，穿透树林的戏剧性光束，斑驳阴影创造动态图案)",
+                
+                "nature.mountain: rugged mountain landscape at dawn, early sunlight creating dramatic shadows across valleys, cool ambient light from sky, warm directional light highlighting terrain(自然.山景：黎明时分的崎岖山景，晨光在山谷间投射戏剧性阴影，天空清凉环境光，温暖定向光突显地形)",
+                
+                "natural.garden: tranquil garden at golden hour with blooming orange flowers and lush foliage, soft backlight filtering through leaves creating delicate rim lighting on subject's silhouette, warm ambient light reflecting from flowers providing gentle fill on face, dappled sunlight through vegetation casting subtle patterns across traditional clothing, green foliage offering natural diffusion and creating depth, late afternoon glow enriching skin tones with golden warmth while maintaining shadow detail in darker areas(自然.花园：黄金时分的宁静花园，绽放的橙色花朵与葱郁植物，阳光透过叶片形成柔和背光在人物轮廓上勾勒精致光边，花朵反射的温暖环境光为脸部提供柔和补光，植物间隙透过的斑驳阳光在传统服饰上投射细腻图案，绿色植被提供自然漫射并创造层次感，午后余晖为肤色注入金色暖调同时保持暗部阴影细节)",
+                
+                "night.street: wet city street reflecting neon lights, raindrops catching and splitting light creating sparkles, diffused glow through mist, multiple colored light sources creating complex shadows(夜景.街道：反射霓虹的湿润街道，雨滴捕捉折射光线形成闪烁，薄雾中的漫射光晕，多彩光源创造复杂阴影)",
+                
+                "night.subway: underground station entrance with mixed lighting, fluorescent overhead lights creating stark shadows, distant street lights adding warm accents, reflected light from wet surfaces(夜景.地铁：混合照明的地下站台入口，荧光顶灯创造鲜明阴影，远处街灯增添温暖重点，潮湿表面反射光)",
+                
+                "commercial.boutique: high-end fashion boutique with elegant clothing displays and mannequins, recessed spotlights from ceiling casting focused beams on garments creating dramatic highlights and deep shadows that accentuate fabric textures, warm ambient light bouncing off mirrored walls providing soft fill light on subject's face, polished marble floors reflecting upward illumination adding depth to silhouette, carefully arranged clothing racks and display cases creating leading lines while mannequins showcase styling possibilities, glass surfaces and metallic fixtures catching and dispersing light throughout space(商业.精品：高端时装精品店与优雅的服装展示和人体模特，天花板筒灯投射聚焦光束在服装上形成戏剧性高光和深邃阴影突出面料质感，镜面墙反射的温暖环境光为主体脸部提供柔和补光，抛光大理石地面反射向上照明为轮廓增添层次，精心布置的衣架和展示柜创造引导线条，人体模特展示搭配可能性，玻璃表面和金属装置捕捉并散射空间光线)"
             ]
         }
     },
@@ -349,94 +644,104 @@
             "default": "centered full-length figure composition with balanced negative space(居中全身人物构图，平衡留白)",
             "choices": [
                 "none(无)",
-                "centered full-length figure composition with balanced negative space(居中全身人物构图，平衡留白)",
-                "rule of thirds composition with figure on right third(三分法构图，人物位于右三分线)",
-                "golden ratio composition with figure at power point(黄金分割构图，人物位于重要点)",
-                "symmetrical composition with figure in center(对称构图，人物居中)",
-                "diagonal composition with dynamic lines(对角线构图，动态线条)",
-                "frame-within-frame composition using environment(环境框架式构图)",
-                "leading lines composition drawing focus to figure(引导线构图突出人物)",
-                "balanced asymmetrical composition with weighted elements(平衡的不对称构图，元素权重分配)",
-                "triangular composition with stable base(三角形构图，稳定基础)",
-                "s-curve composition for elegant flow(S曲线构图，优雅流动感)"
+                "basic.centered: centered full-length figure composition with balanced negative space(基础.居中：居中全身人物构图，平衡留白)",
+                "basic.thirds: rule of thirds composition with figure on right third(基础.三分：三分法构图，人物位于右三分线)",
+                "basic.golden: golden ratio composition with figure at power point(基础.黄金：黄金分割构图，人物位于重要点)",
+                "basic.symmetry: symmetrical composition with figure in center(基础.对称：对称构图，人物居中)",
+                
+                "dynamic.diagonal: diagonal composition with dynamic lines(动态.对角：对角线构图，动态线条)",
+                "dynamic.leading: leading lines composition drawing focus to figure(动态.引导：引导线构图突出人物)",
+                "dynamic.scurve: s-curve composition for elegant flow(动态.S曲线：S曲线构图，优雅流动感)",
+                "dynamic.triangle: triangular composition with stable base(动态.三角：三角形构图，稳定基础)",
+                
+                "advanced.frame: frame-within-frame composition using environment(高级.框架：环境框架式构图)",
+                "advanced.asymmetry: balanced asymmetrical composition with weighted elements(高级.不对称：平衡的不对称构图，元素权重分配)",
+                "advanced.layered: layered composition with foreground, middle, and background(高级.层次：前中后景分层构图)",
+                "advanced.radial: radial composition with central focus point(高级.放射：以中心焦点的放射状构图)"
             ]
         },
         "view": {
             "default": "full-body view from medium distance, figure at 70% frame height(中等距离全身视角，人物占画面70%高度)",
             "choices": [
                 "none(无)",
-                "full-body view from medium distance, figure at 70% frame height(中等距离全身视角，人物占画面70%高度)",
-                "wide establishing view showing full environment(展示完整环境的广角视角)",
-                "close full-body view with minimal environment(最少环境的近距离全身视角)",
-                "medium-wide view balancing figure and environment(平衡人物与环境的中广角视角)",
-                "expansive view with environmental context(带环境背景的开阔视角)",
-                "intimate full-body view from close distance(近距离私密全身视角)",
-                "standard full-body view with natural perspective(自然透视的标准全身视角)",
-                "pulled-back view showing scale relationship(展示比例关系的远视角)",
-                "compressed view with telephoto perspective(长焦压缩效果的视角)",
-                "wide-angle view with dramatic perspective(戏剧性透视的广角视角)",
-                "full-body shot from low position with figure at 60% frame height(低位全身拍摄，人物占画面高度60%)"
+                "standard.full: full-body view from medium distance, figure at 70% frame height(标准.全身：中等距离全身视角，人物占画面70%高度)",
+                "standard.wide: wide establishing view showing full environment(标准.广角：展示完整环境的广角视角)",
+                "standard.balanced: medium-wide view balancing figure and environment(标准.平衡：平衡人物与环境的中广角视角)",
+                
+                "intimate.close: close full-body view with minimal environment(私密.近景：最少环境的近距离全身视角)",
+                "intimate.personal: intimate full-body view from close distance(私密.个人：近距离私密全身视角)",
+                "intimate.detail: close-up view emphasizing details(私密.细节：强调细节的特写视角)",
+                
+                "dramatic.compressed: compressed view with telephoto perspective(戏剧.压缩：长焦压缩效果的视角)",
+                "dramatic.wide: wide-angle view with dramatic perspective(戏剧.广角：戏剧性透视的广角视角)",
+                "dramatic.low: full-body shot from low position with figure at 60% frame height(戏剧.低位：低位全身拍摄，人物占画面60%)",
+                
+                "environmental.expansive: expansive view with environmental context(环境.开阔：带环境背景的开阔视角)",
+                "environmental.scale: pulled-back view showing scale relationship(环境.比例：展示比例关系的远视角)",
+                "environmental.context: wide view emphasizing environmental storytelling(环境.情境：强调环境叙事的广角视角)"
             ]
         },
         "angle": {
             "default": "eye-level angle from a comfortable distance(舒适距离的平视角度)",
             "choices": [
                 "none(无)",
-                "eye-level angle from a comfortable distance(舒适距离的平视角度)",
-                "slightly elevated angle showing more environment(略微高角度以显示更多环境)",
-                "low angle view from medium distance(中等距离的低角度视图)",
-                "high angle shot with environmental context(带环境背景的高角度拍摄)",
-                "eye-level dutch angle from medium distance(中等距离的倾斜平视角度)",
-                "bird's eye view showing full scene(显示完整场景的鸟瞰视角)",
-                "slight low angle emphasizing environment(强调环境的略低角度)",
-                "natural eye-level from slight distance(略远处的自然平视)",
-                "upward angle from ground level(地平面仰角)",
-                "dramatic low angle from knee height(膝盖高度的戏剧性仰角)",
-                "heroic low angle from waist level(腰部高度的英雄式仰角)",
-                "dynamic upward angle emphasizing height(强调高度的动态仰角)",
-                "low angle with slight tilt for dramatic effect(带轻微倾斜的低角度以增加戏剧效果)"
+                "eye.standard: eye-level angle from a comfortable distance(平视.标准：舒适距离的平视角度)",
+                "eye.dutch: eye-level dutch angle from medium distance(平视.倾斜：中等距离的倾斜平视角度)",
+                "eye.natural: natural eye-level from slight distance(平视.自然：略远处的自然平视)",
+                
+                "high.slight: slightly elevated angle showing more environment(高角.略高：略微高角度以显示更多环境)",
+                "high.overhead: high angle shot with environmental context(高角.俯视：带环境背景的高角度拍摄)",
+                "high.birds: bird's eye view showing full scene(高角.鸟瞰：显示完整场景的鸟瞰视角)",
+                
+                "low.slight: slight low angle emphasizing environment(低角.略低：强调环境的略低角度)",
+                "low.dramatic: dramatic low angle from knee height(低角.戏剧：膝盖高度的戏剧性仰角)",
+                "low.heroic: heroic low angle from waist level(低角.英雄：腰部高度的英雄式仰角)",
+                
+                "creative.ground: upward angle from ground level(创意.地面：地平面仰角)",
+                "creative.dynamic: dynamic upward angle emphasizing height(创意.动态：强调高度的动态仰角)",
+                "creative.tilted: low angle with slight tilt for dramatic effect(创意.倾斜：带轻微倾斜的低角度以增加戏剧效果)"
             ]
         },
         "focus": {
             "default": "deep focus with sharp details from foreground to background(前景到背景都清晰的深焦)",
             "choices": [
                 "none(无)",
-                "deep focus with sharp details from foreground to background(前景到背景都清晰的深焦)",
-                "ultra sharp focus throughout entire frame(整个画面超清晰对焦)",
-                "cinematic deep focus with crystal clear environment(电影感深焦，环境清晰可见)",
-                "balanced focus with crisp details in all planes(所有层面都清晰细节的平衡对焦)",
-                "high clarity focus from subject to distant background(从主体到远景都高清晰度的对焦)",
-                "maximum depth of field with sharp environmental details(最大景深，环境细节清晰)",
-                "architectural focus with precise environmental details(建筑摄影式对焦，环境细节精准)",
-                "landscape focus emphasizing scenic clarity(风光摄影对焦，强调场景清晰度)",
-                "documentary style focus with full scene clarity(纪实风格对焦，全场景清晰)",
-                "technical focus with uniform sharpness(技术性对焦，统一锐度)",
-                "f/16 deep focus for maximum detail retention(f/16光圈深焦，保持最大细节)"
+                "deep.standard: deep focus with sharp details from foreground to background(深焦.标准：前景到背景都清晰的深焦)",
+                "deep.ultra: ultra sharp focus throughout entire frame(深焦.超清：整个画面超清晰对焦)",
+                "deep.cinematic: cinematic deep focus with crystal clear environment(深焦.电影：电影感深焦，环境清晰可见)",
+                
+                "technical.balanced: balanced focus with crisp details in all planes(技术.平衡：所有层面都清晰细节的平衡对焦)",
+                "technical.maximum: maximum depth of field with sharp environmental details(技术.最大：最大景深，环境细节清晰)",
+                "technical.uniform: technical focus with uniform sharpness(技术.统一：技术性对焦，统一锐度)",
+                
+                "specialty.architectural: architectural focus with precise environmental details(专业.建筑：建筑摄影式对焦，环境细节精准)",
+                "specialty.landscape: landscape focus emphasizing scenic clarity(专业.风光：风光摄影对焦，强调场景清晰度)",
+                "specialty.documentary: documentary style focus with full scene clarity(专业.纪实：纪实风格对焦，全场景清晰)"
             ]
         },
         "style": {
             "default": "epic cinematic style with dramatic lighting and rich colors(史诗电影风格，戏剧性光影和丰富色彩)",
             "choices": [
                 "none(无)",
-                "epic cinematic style with dramatic lighting and rich colors(史诗电影风格，戏剧性光影和丰富色彩)",
-                "ethereal fantasy style with soft dreamy atmosphere(空灵奇幻风格，柔和梦幻氛围)",
-                "mystical oriental style with elegant aesthetic(东方玄幻风格，优雅美学风格)",
+                "cinematic.epic: epic cinematic style with dramatic lighting and rich colors(电影.史诗：史诗电影风格，戏剧性光影和丰富色彩)",
+                "cinematic.fantasy: ethereal fantasy style with soft dreamy atmosphere(电影.奇幻：空灵奇幻风格，柔和梦幻氛围)",
+                "cinematic.oriental: mystical oriental style with elegant aesthetic(电影.东方：东方玄幻风格，优雅美学风格)",
                 
-                "high fashion editorial style with polished aesthetic(高级时尚大片风格，精致美学)",
-                "luxury lifestyle with sophisticated mood(奢华生活方式，精致氛围)",
-                "clean minimalist style with refined composition(简约主义风格，精致构图)",
+                "fashion.editorial: high fashion editorial style with polished aesthetic(时尚.大片：高级时尚大片风格，精致美学)",
+                "fashion.luxury: luxury lifestyle with sophisticated mood(时尚.奢华：奢华生活方式，精致氛围)",
+                "fashion.minimal: clean minimalist style with refined composition(时尚.简约：简约主义风格，精致构图)",
                 
-                "natural documentary style with authentic feeling(自然纪实风格，真实感觉)",
-                "moody landscape style with atmospheric quality(氛围风光风格，大气质感)",
-                "golden hour style with warm romantic lighting(黄金时段风格，温暖浪漫光线)",
+                "natural.documentary: natural documentary style with authentic feeling(自然.纪实：自然纪实风格，真实感觉)",
+                "natural.landscape: moody landscape style with atmospheric quality(自然.风光：氛围风光风格，大气质感)",
+                "natural.golden: golden hour style with warm romantic lighting(自然.黄金：黄金时段风格，温暖浪漫光线)",
                 
-                "urban contemporary style with modern edge(现代都市风格，前卫感)",
-                "street photography style with candid essence(街头摄影风格，随性本质)",
-                "night city style with neon color palette(城市夜景风格，霓虹色调)",
+                "urban.contemporary: urban contemporary style with modern edge(都市.现代：现代都市风格，前卫感)",
+                "urban.street: street photography style with candid essence(都市.街拍：街头摄影风格，随性本质)",
+                "urban.night: night city style with neon color palette(都市.夜景：城市夜景风格，霓虹色调)",
                 
-                "fine art style with painterly quality(艺术摄影风格，绘画质感)",
-                "vintage retro style with nostalgic tones(复古风格，怀旧色调)",
-                "artistic portrait style with emotional depth(艺术人像风格，情感深度)"
+                "artistic.fine: fine art style with painterly quality(艺术.绘画：艺术摄影风格，绘画质感)",
+                "artistic.vintage: vintage retro style with nostalgic tones(艺术.复古：复古风格，怀旧色调)",
+                "artistic.portrait: artistic portrait style with emotional depth(艺术.人像：艺术人像风格，情感深度)"
             ]
         },
         "quality": {
