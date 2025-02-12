@@ -159,38 +159,44 @@
             ]
         },
         "body": {
-            "default": "perfect hourglass figure: slim waist with full bust and hips in ideal proportion(完美沙漏身材：纤细腰身配合丰满上围和臀部的理想比例)",
+            "default": "perfect hourglass figure: slim waist with full D-cup bust and hips in ideal proportion(完美沙漏身材：纤细腰身配合D罩杯丰满上围和臀部的理想比例)",
             "choices": [
                 "none(无)",
-                "hourglass.perfect: slim waist with full bust and hips in ideal proportion(沙漏.完美：纤细腰身配合丰满上围和臀部的理想比例)",
-                "hourglass.curvy: voluptuous figure with prominent bust, tiny waist and full hips(沙漏.丰满：丰满上围，纤细腰身和丰满臀部)",
-                "hourglass.athletic: toned figure with defined waist, athletic bust and sculpted hips(沙漏.运动：紧致身材，收腰，运动感上围和雕塑感臀部)",
-                "hourglass.slim: slender hourglass with subtle curves and balanced proportions(沙漏.纤细：纤细沙漏体型，柔和曲线和平衡比例)",
-                "hourglass.petite: delicate hourglass with small frame and dainty features(沙漏.娇小：精致小巧沙漏体型，娇小特征)",
+                "hourglass.perfect: slim waist with full D-cup bust and hips in ideal proportion(沙漏.完美：纤细腰身配合D罩杯丰满上围和臀部的理想比例)",
+                "hourglass.curvy: voluptuous figure with prominent E-cup bust, tiny waist and full hips(沙漏.丰满：E罩杯丰满上围，纤细腰身和丰满臀部)",
+                "hourglass.athletic: toned figure with defined waist, athletic C-cup bust and sculpted hips(沙漏.运动：紧致身材，收腰，C罩杯运动感上围和雕塑感臀部)",
+                "hourglass.slim: slender hourglass with B-cup bust, subtle curves and balanced proportions(沙漏.纤细：纤细沙漏体型，B罩杯上围，柔和曲线和平衡比例)",
+                "hourglass.petite: delicate hourglass with A-cup bust, small frame and dainty features(沙漏.娇小：精致小巧沙漏体型，A罩杯上围，娇小特征)",
                 
-                "model.tall: tall and slender build with long limbs and elegant proportions(模特.高挑：高挑苗条，四肢修长，优雅比例)",
-                "model.runway: willowy figure with long legs and subtle curves(模特.秀场：柳条身材，长腿，细微曲线)",
-                "model.editorial: statuesque figure with dramatic proportions(模特.大片：雕塑般身材，戏剧性比例)",
-                "model.commercial: balanced model figure with natural curves(模特.商业：平衡的模特身材，自然曲线)",
-                "model.petite: delicate model frame with refined features(模特.娇小：精致娇小的模特体型，精细特征)",
+                "voluptuous.full: full-figured body with F-cup bust, generous curves and soft features(丰满.饱满：F罩杯丰满上围，丰腴曲线和柔和特征)",
+                "voluptuous.curvy: curvaceous figure with E-cup bust and rounded contours(丰满.曲线：E罩杯丰满上围，圆润轮廓)",
+                "voluptuous.balanced: well-proportioned full figure with DD-cup bust and harmonious curves(丰满.均衡：DD罩杯丰满上围，和谐丰满曲线)",
+                "voluptuous.athletic: full athletic build with D-cup bust and toned features(丰满.运动：D罩杯丰满上围，紧致丰满体型)",
+                "voluptuous.petite: petite full figure with D-cup bust and compact curves(丰满.娇小：D罩杯丰满上围，紧凑丰满体型)",
                 
-                "athletic.fit: well-toned body with defined muscles and firm curves(运动.健身：良好肌肉线条，紧致曲线)",
-                "athletic.lean: slender muscular build with long toned legs(运动.精瘦：纤细肌肉型，修长紧致双腿)",
-                "athletic.sporty: athletic build with proportional features and strong legs(运动.运动：运动体格，匀称特征和强健双腿)",
-                "athletic.dancer: graceful athletic form with elegant muscle tone(运动.舞者：优雅运动体态，优美肌肉线条)",
-                "athletic.yoga: flexible athletic build with balanced muscle definition(运动.瑜伽：柔韧运动体型，平衡肌肉线条)",
+                "model.tall: tall and slender build with B-cup bust, long limbs and elegant proportions(模特.高挑：高挑苗条，B罩杯上围，四肢修长，优雅比例)",
+                "model.runway: willowy figure with A-cup bust, long legs and subtle curves(模特.秀场：柳条身材，A罩杯上围，长腿，细微曲线)",
+                "model.editorial: statuesque figure with C-cup bust and dramatic proportions(模特.大片：雕塑般身材，C罩杯上围，戏剧性比例)",
+                "model.commercial: balanced model figure with B-cup bust and natural curves(模特.商业：平衡的模特身材，B罩杯上围，自然曲线)",
+                "model.petite: delicate model frame with A-cup bust and refined features(模特.娇小：精致娇小的模特体型，A罩杯上围，精细特征)",
                 
-                "balanced.natural: medium build with harmonious proportions(均衡.自然：中等体格，和谐比例)",
-                "balanced.curvy: evenly distributed curves with medium-full features(均衡.曲线：均匀分布曲线，中等丰满特征)",
-                "balanced.classic: well-proportioned figure with moderate curves(均衡.经典：良好比例，适中曲线)",
-                "balanced.slim: proportional slim build with gentle curves(均衡.纤细：匀称纤细体型，温和曲线)",
-                "balanced.petite: small balanced frame with delicate features(均衡.娇小：小巧均衡体型，精致特征)",
+                "athletic.fit: well-toned body with B-cup bust, defined muscles and firm curves(运动.健身：B罩杯上围，良好肌肉线条，紧致曲线)",
+                "athletic.lean: slender muscular build with A-cup bust and long toned legs(运动.精瘦：A罩杯上围，纤细肌肉型，修长紧致双腿)",
+                "athletic.sporty: athletic build with B-cup bust, proportional features and strong legs(运动.运动：B罩杯上围，运动体格，匀称特征和强健双腿)",
+                "athletic.dancer: graceful athletic form with B-cup bust and elegant muscle tone(运动.舞者：B罩杯上围，优雅运动体态，优美肌肉线条)",
+                "athletic.yoga: flexible athletic build with B-cup bust and balanced muscle definition(运动.瑜伽：B罩杯上围，柔韧运动体型，平衡肌肉线条)",
                 
-                "feature.long_legs: exceptionally long legs with slim ankles(特征.长腿：特长双腿，纤细脚踝)",
-                "feature.small_waist: dramatically small waist with proportional features(特征.细腰：显著纤细腰身，匀称特征)",
-                "feature.toned_arms: sculpted arms with elegant muscle definition(特征.紧致手臂：雕塑感手臂，优雅肌肉线条)",
-                "feature.elegant_neck: long graceful neck with refined posture(特征.优雅颈部：修长优雅颈部，精致姿态)",
-                "feature.defined_collarbones: prominent collarbones with elegant structure(特征.锁骨：突出锁骨，优雅结构)"
+                "balanced.natural: medium build with C-cup bust and harmonious proportions(均衡.自然：C罩杯上围，中等体格，和谐比例)",
+                "balanced.curvy: evenly distributed curves with D-cup bust and medium-full features(均衡.曲线：D罩杯上围，均匀分布曲线，中等丰满特征)",
+                "balanced.classic: well-proportioned figure with C-cup bust and moderate curves(均衡.经典：C罩杯上围，良好比例，适中曲线)",
+                "balanced.slim: proportional slim build with B-cup bust and gentle curves(均衡.纤细：B罩杯上围，匀称纤细体型，温和曲线)",
+                "balanced.petite: small balanced frame with A-cup bust and delicate features(均衡.娇小：A罩杯上围，小巧均衡体型，精致特征)",
+                
+                "feature.long_legs: exceptionally long legs with B-cup bust and slim ankles(特征.长腿：B罩杯上围，特长双腿，纤细脚踝)",
+                "feature.small_waist: dramatically small waist with C-cup bust and proportional features(特征.细腰：C罩杯上围，显著纤细腰身，匀称特征)",
+                "feature.toned_arms: sculpted arms with B-cup bust and elegant muscle definition(特征.紧致手臂：B罩杯上围，雕塑感手臂，优雅肌肉线条)",
+                "feature.elegant_neck: long graceful neck with B-cup bust and refined posture(特征.优雅颈部：B罩杯上围，修长优雅颈部，精致姿态)",
+                "feature.defined_collarbones: prominent collarbones with B-cup bust and elegant structure(特征.锁骨：B罩杯上围，突出锁骨，优雅结构)"
             ]
         }
     },
@@ -199,6 +205,12 @@
             "default": "none(无)",
             "choices": [
                 "none(无)",
+                "yoga.sports_bra: form-fitting sports bra with moisture-wicking fabric(瑜伽.运动内衣：贴身运动内衣，吸汗面料)",
+                "yoga.crop_top: cropped yoga top with racerback design(瑜伽.短款上衣：露脐瑜伽上衣，挖背设计)",
+                "yoga.tank_top: fitted yoga tank with built-in support(瑜伽.背心：修身瑜伽背心，内置支撑)",
+                "yoga.long_sleeve: seamless long sleeve yoga top with thumb holes(瑜伽.长袖：无缝瑜伽长袖，拇指孔设计)",
+                "yoga.cover_up: loose-fit yoga cover up with draped design(瑜伽.罩衫：宽松瑜伽罩衫，垂坠设计)",
+                
                 "basic.plain_tee: plain white cotton t-shirt with round neck(基础.纯色T恤：白色圆领纯棉T恤)",
                 "basic.fitted_tee: black fitted crew neck t-shirt(基础.修身T恤：黑色修身圆领T恤)",
                 "basic.graphic_tee: oversized graphic print t-shirt(基础.图案T恤：宽松图案印花T恤)",
@@ -276,6 +288,13 @@
             "default": "none(无)",
             "choices": [
                 "none(无)",
+                "yoga.leggings: high-waisted compression yoga leggings with four-way stretch(瑜伽.紧身裤：高腰压缩瑜伽裤，四向拉伸)",
+                "yoga.capri: mid-calf length yoga pants with wide waistband(瑜伽.七分裤：中长瑜伽裤，宽腰带设计)",
+                "yoga.shorts: high-rise yoga shorts with side pockets(瑜伽.短裤：高腰瑜伽短裤，侧边口袋)",
+                "yoga.flare: bootcut yoga pants with tummy control(瑜伽.喇叭裤：微喇瑜伽裤，收腹设计)",
+                "yoga.harem: loose-fit yoga harem pants with tapered ankles(瑜伽.哈伦裤：宽松瑜伽哈伦裤，收脚设计)",
+                
+                "pants.jeans: classic blue straight leg jeans(裤子.牛仔裤：经典蓝色直筒牛仔裤)",
                 "jeans.levis: classic blue Levi's 501 straight leg jeans(牛仔裤.李维斯：经典蓝色501直筒牛仔裤)",
                 "jeans.acne: high-waisted black Acne Studios skinny jeans(牛仔裤.Acne：高腰黑色紧身牛仔裤)",
                 "jeans.citizens: Citizens of Humanity light wash ripped boyfriend jeans(牛仔裤.COH：浅色水洗破洞男友牛仔裤)",
@@ -340,7 +359,13 @@
             "default": "none(无)",
             "choices": [
                 "none(无)",
-                "sneakers.nike: white Nike Air Force 1 low-top sneakers(运动鞋.耐克：白色空军一号低帮运动鞋)",
+                "yoga.barefoot: barefoot for maximum ground connection(瑜伽.赤脚：赤脚以获得最佳地面接触)",
+                "yoga.grip_socks: non-slip yoga socks with silicone grips(瑜伽.防滑袜：硅胶防滑瑜伽袜)",
+                "yoga.minimal: minimalist yoga shoes with flexible sole(瑜伽.极简：柔软鞋底极简瑜伽鞋)",
+                "yoga.slip_on: breathable slip-on yoga shoes with mesh upper(瑜伽.一脚蹬：透气网面一脚蹬瑜伽鞋)",
+                "yoga.studio: lightweight studio wrap shoes for yoga practice(瑜伽.工作室：轻便包裹式瑜伽练习鞋)",
+                
+                "sneakers.nike: white Nike Air Force 1 sneakers(运动鞋.耐克：白色空军一号运动鞋)",
                 "sneakers.adidas: Adidas Superstar classic shell-toe sneakers(运动鞋.阿迪达斯：贝壳头经典运动鞋)",
                 "sneakers.nb: New Balance 990v5 grey running shoes(运动鞋.新百伦：990v5灰色跑鞋)",
                 "sneakers.converse: classic black Converse Chuck 70 high-tops(运动鞋.匡威：经典黑色70s高帮)",
