@@ -9,11 +9,12 @@ from .nodes.load_image_from_folder import LoadImageFromFolder
 from .nodes.file_save import FileSave
 from .nodes.unified_prompt_generator import UnifiedPromptGeneratorNode
 from .nodes.dynamic_expression import DynamicExpressionNode
+from .nodes.load_prompts_from_folder import LoadPromptsFromFolder
 from .submodules_loader import load_submodules
 from .requirements_installer import ensure_dependencies
 
 # Check and install dependencies on load
-ensure_dependencies()
+# ensure_dependencies()
 
 # Set category for main repo nodes
 PresetSizeLatent.CATEGORY = "🐟QHNodes"
@@ -26,6 +27,7 @@ LoadImageFromFolder.CATEGORY = "🐟QHNodes"
 FileSave.CATEGORY = "🐟QHNodes"
 UnifiedPromptGeneratorNode.CATEGORY = "🐟QHNodes"
 DynamicExpressionNode.CATEGORY = "🐟QHNodes"
+LoadPromptsFromFolder.CATEGORY = "🐟QHNodes"
 
 # Load submodules
 submodule_nodes, submodule_display_names = load_submodules(os.path.dirname(__file__))
@@ -42,6 +44,7 @@ NODE_CLASS_MAPPINGS = {
     "FileSave": FileSave,
     "UnifiedPromptGenerator": UnifiedPromptGeneratorNode,
     "DynamicExpression": DynamicExpressionNode,
+    "LoadPromptsFromFolder": LoadPromptsFromFolder,
     **submodule_nodes
 }
 
@@ -56,6 +59,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "FileSave": "🐟File Save",
     "UnifiedPromptGenerator": "🐟Unified Prompt Generator",
     "DynamicExpression": "🐟Dynamic Expression",
+    "LoadPromptsFromFolder": "🐟Load Prompts From Folder",
     **submodule_display_names
 }
 
