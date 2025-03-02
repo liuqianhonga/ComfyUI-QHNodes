@@ -35,60 +35,89 @@ class LoadLoraFromFolder:
     CATEGORY = "QHNodes"
 
     def load_loras(self, model, lora_folders, filter_text="", strength_model=1.0, merge_loras=False):
-        # Split lora_folders into multiple paths
-        folders = [p.strip() for p in lora_folders.split(',') if p.strip()]
-        if not folders:
-            raise ValueError("No valid folder provided")
-
-        # Split filter text into list
-        filters = [f.strip().lower() for f in filter_text.split(',') if f.strip()]
-        
-        lora_files = []
-        for folder in folders:
-            # Build full path
-            if os.path.isabs(folder):
-                full_path = folder
+        """Load LoRA models from specified folders"""
+        try:
+            # Split lora_folders into multiple paths
+            if not lora_folders:
+                folders = [self.lora_path]  # Use default path
             else:
-                full_path = os.path.join(self.lora_path, folder)
+                folders = []
+                for p in lora_folders.split(','):
+                    p = p.strip()
+                    if not p:
+                        continue
+                    # Handle absolute and relative paths
+                    if os.path.isabs(p):
+                        folders.append(p)  # Use absolute path directly
+                    else:
+                        folders.append(os.path.join(self.lora_path, p))  # Join relative path with default path
             
-            # Check if path exists
-            if not os.path.exists(full_path):
-                print(f"Path not found: {full_path}")
-                continue
+            # Split filter text into list
+            filters = [f.strip().lower() for f in filter_text.split(',') if f.strip()]
             
-            # Iterate through all files in directory
-            for file in os.listdir(full_path):
-                if file.endswith('.safetensors'):
-                    if not filters or any(f.lower() in file.lower() for f in filters):
-                        relative_path = os.path.join(folder, file)
-                        lora_files.append(relative_path)
+            lora_files = []
+            for folder in folders:
+                if os.path.exists(folder):
+                    for file in os.listdir(folder):
+                        if file.endswith(('.safetensors', '.ckpt')):
+                            # Apply filters if any
+                            if filters:
+                                file_lower = file.lower()
+                                if not any(f in file_lower for f in filters):
+                                    continue
+                            lora_files.append(os.path.join(folder, file))
+            
+            # Raise exception if no LoRA files found
+            if not lora_files:
+                if filters:
+                    print(f"[Load LoRA] No LoRA files found matching filters: {filters} in folders: {folders}")
+                else:
+                    print(f"[Load LoRA] No LoRA files found in folders: {folders}")
+                raise ValueError(f"No LoRA files found in folders: {folders}")
+            
+            # Load all LoRA files
+            loaded_loras = []
+            for file in lora_files:
+                try:
+                    lora_name = os.path.splitext(os.path.basename(file))[0]
+                    loaded_loras.append({
+                        "name": lora_name,
+                        "path": file
+                    })
+                except Exception as e:
+                    print(f"[Load LoRA] Error loading {file}: {str(e)}")
+                    continue
+            
+            if not loaded_loras:
+                if filters:
+                    raise ValueError(f"No LoRA files found matching filters: {filter_text}")
+                else:
+                    raise ValueError("No LoRA files found in the specified folders")
 
-        if not lora_files:
-            if filters:
-                raise ValueError(f"No LoRA files found matching filters: {filter_text}")
+            # Load LoRAs
+            if merge_loras:
+                # Merge all LoRAs into a single model
+                result_model = model.clone()
+                for lora_file in lora_files:
+                    full_path = lora_file
+                    lora = comfy.utils.load_torch_file(full_path)
+                    result_model = comfy.sd.load_lora_for_models(result_model, None, lora, strength_model, 0)[0]
+                models = [result_model]
+                # Join lora_files for result while preserving original list for UI
+                combined_loras = " ".join(lora_files)
+                return {"ui": {"loras": [lora_files]}, "result": (models, [combined_loras], strength_model)}
             else:
-                raise ValueError("No LoRA files found in the specified folders")
-
-        # Load LoRAs
-        if merge_loras:
-            # Load all LoRAs into the same model
-            result_model = model.clone()
-            for lora_file in lora_files:
-                full_path = os.path.join(self.lora_path, lora_file)
-                lora = comfy.utils.load_torch_file(full_path)
-                result_model = comfy.sd.load_lora_for_models(result_model, None, lora, strength_model, 0)[0]
-            models = [result_model]
-            # Combine lora_files into a single string for result, but keep original list for UI
-            combined_loras = " ".join(lora_files)
-            return {"ui": {"loras": [lora_files]}, "result": (models, [combined_loras], strength_model)}
-        else:
-            # Load each LoRA into a separate model clone
-            models = []
-            for lora_file in lora_files:
-                model_clone = model.clone()
-                full_path = os.path.join(self.lora_path, lora_file)
-                lora = comfy.utils.load_torch_file(full_path)
-                model_clone = comfy.sd.load_lora_for_models(model_clone, None, lora, strength_model, 0)[0]
-                models.append(model_clone)
+                # Load each LoRA into its own model clone
+                models = []
+                for lora_file in lora_files:
+                    model_clone = model.clone()
+                    full_path = lora_file
+                    lora = comfy.utils.load_torch_file(full_path)
+                    model_clone = comfy.sd.load_lora_for_models(model_clone, None, lora, strength_model, 0)[0]
+                    models.append(model_clone)
+                
+                return {"ui": {"loras": [lora_files]}, "result": (models, lora_files, strength_model)}
             
-            return {"ui": {"loras": [lora_files]}, "result": (models, lora_files, strength_model)}
+        except Exception as e:
+            print(f"[Load LoRA] Error: {str(e)}")
+            raise ValueError(f"Error loading LoRAs: {str(e)}")
