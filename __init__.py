@@ -13,8 +13,8 @@ from .nodes.load_prompts_from_folder import LoadPromptsFromFolder
 from .submodules_loader import load_submodules
 from .requirements_installer import ensure_dependencies
 
-# Check and install dependencies on load
-# ensure_dependencies()
+# Check and install dependencies on load - only once per session
+ensure_dependencies()
 
 # Set category for main repo nodes
 PresetSizeLatent.CATEGORY = "🐟QHNodes"

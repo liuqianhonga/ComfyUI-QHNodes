@@ -2,6 +2,7 @@ import os
 import importlib.util
 import subprocess
 import sys
+import pkg_resources
 
 def check_and_install_requirements(requirements_file):
     """Check and install requirements from a requirements.txt file"""
@@ -14,10 +15,14 @@ def check_and_install_requirements(requirements_file):
                 return
                 
             for req in requirements:
+                # Parse package name and version
+                package_spec = req.split('==')[0].split('>=')[0].split('<=')[0].strip()
+                
                 try:
-                    module_name = req.split('==')[0].split('>=')[0].split('<=')[0].strip()
-                    importlib.import_module(module_name)
-                except ImportError:
+                    # Check if package is installed using pkg_resources
+                    pkg_resources.get_distribution(package_spec)
+                    print(f"[QHNodes] Dependency satisfied: {req}")
+                except pkg_resources.DistributionNotFound:
                     print(f"[QHNodes] Installing: {req}")
                     subprocess.check_call([sys.executable, "-m", "pip", "install", req])
         except Exception as e:
