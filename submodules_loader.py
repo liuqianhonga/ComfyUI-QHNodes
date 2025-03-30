@@ -97,6 +97,7 @@ def load_submodules(base_path):
                                 # If it already starts with QHNodes, just ensure it has the fish emoji
                                 node_class.CATEGORY = add_fish_emoji(node_class.CATEGORY)
                             submodule_nodes[node_name] = node_class
+                            print(f"Loaded {node_class.CATEGORY}/{node_name} node from {submodule}")
 
                     if hasattr(module, "NODE_DISPLAY_NAME_MAPPINGS"):
                         submodule_display_names.update(module.NODE_DISPLAY_NAME_MAPPINGS)
