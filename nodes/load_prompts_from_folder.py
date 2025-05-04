@@ -1,5 +1,9 @@
 import os
 import glob
+from PIL import Image
+import numpy as np
+import torch
+from .lib import IMAGE_EXTENSIONS
 
 class LoadPromptsFromFolder:
     def __init__(self):
@@ -19,9 +23,9 @@ class LoadPromptsFromFolder:
             },
         }
 
-    RETURN_TYPES = ("STRING", "INT")
-    RETURN_NAMES = ("prompts", "current_index")
-    OUTPUT_IS_LIST = (True, False)
+    RETURN_TYPES = ("STRING", "IMAGE", "INT")
+    RETURN_NAMES = ("prompts", "images", "current_index")
+    OUTPUT_IS_LIST = (True, True, False)
     FUNCTION = "load_prompts"
     CATEGORY = "🐟QHNodes"
     IS_CHANGED = True
@@ -45,11 +49,11 @@ class LoadPromptsFromFolder:
 
     def load_prompts(self, folder, file_extension, loop_mode, start_index, load_cap):
         if not os.path.exists(folder):
-            return ([], 0)
+            return ([], [], 0)
             
         prompt_files = self.get_prompt_files(folder, file_extension)
         if not prompt_files:
-            return ([], 0)
+            return ([], [], 0)
 
         if loop_mode:
             # Use current index in loop mode
@@ -70,14 +74,50 @@ class LoadPromptsFromFolder:
                 actual_index = start_index
         
         prompts = []
+        images = []
         
         for file_path in selected_files:
             try:
+                # Load text prompt
                 with open(file_path, 'r', encoding='utf-8') as f:
                     prompt = f.read().strip()
                 prompts.append(prompt)
+                
+                # Try to load corresponding image with the same name but different extension
+                base_name = os.path.splitext(file_path)[0]
+                image_found = False
+                
+                # Try all supported image extensions
+                for ext in IMAGE_EXTENSIONS:
+                    # Remove wildcard from extension pattern
+                    ext_clean = ext.replace("*", "")
+                    img_path = base_name + ext_clean
+                    
+                    if os.path.exists(img_path):
+                        try:
+                            img = Image.open(img_path)
+                            # Convert to RGB if necessary
+                            if img.mode != 'RGB':
+                                img = img.convert('RGB')
+                            # Convert to numpy array and normalize to float32
+                            img_array = np.array(img).astype(np.float32) / 255.0
+                            # Convert to torch tensor with shape [1, H, W, 3]
+                            image = torch.from_numpy(img_array.copy())[None,]
+                            images.append(image)
+                            image_found = True
+                            break
+                        except Exception as e:
+                            print(f"Error loading image {img_path}: {str(e)}")
+                            continue
+                
+                # If no image found, add an empty placeholder
+                if not image_found:
+                    # Create a small 1x1 black image as placeholder
+                    empty_img = torch.zeros(1, 1, 1, 3, dtype=torch.float32)
+                    images.append(empty_img)
+                    
             except Exception as e:
                 print(f"Error loading prompt file {file_path}: {str(e)}")
                 continue
                 
-        return (prompts, actual_index) 
+        return (prompts, images, actual_index) 
